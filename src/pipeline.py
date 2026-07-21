@@ -26,6 +26,8 @@ class DiagnosticReport:
     error_code: Optional[str] = None
     model: Optional[str] = None
     manufacturer: Optional[str] = None
+    brand: Optional[str] = None
+    asset_type: Optional[str] = None
     severity: str = "unknown"
     failure_name: str = "Unknown Fault"
     
@@ -61,6 +63,8 @@ class DiagnosticReport:
             "error_code": self.error_code,
             "model": self.model,
             "manufacturer": self.manufacturer,
+            "brand": self.brand,
+            "asset_type": self.asset_type,
             "severity": self.severity,
             "failure_name": self.failure_name,
             "safety_warnings": self.safety_warnings,
@@ -140,7 +144,36 @@ SAFETY_DATABASE = {
         "repair_time_hours": 2.0,
         "tools": ["Multimeter (CAT III, 600V)", "Megohmmeter", "Capacitor meter", "LOTO kit", "Clamp meter"],
     },
+    "E1": {
+        "warnings": ["⚠️ Disconnect power before touching PCB or sensors"],
+        "ppe": ["Safety glasses", "Electrical gloves"],
+        "sops": ["SOP-ELC-001: Electrical-Safety"],
+        "repair_time_hours": 1.0,
+        "tools": ["Multimeter"],
+    },
+    "C154": {
+        "warnings": ["🚨 DANGER: High voltage BLDC motor"],
+        "ppe": ["Electrical gloves"],
+        "sops": ["SOP-ELC-001: Electrical-Safety"],
+        "repair_time_hours": 2.0,
+        "tools": ["Multimeter"],
+    },
+    "CH01": {
+        "warnings": ["⚠️ Disconnect power before servicing"],
+        "ppe": ["Safety glasses"],
+        "sops": ["SOP-ELC-001: Electrical-Safety"],
+        "repair_time_hours": 1.0,
+        "tools": ["Multimeter"],
+    },
+    "CH05": {
+        "warnings": ["🚨 Do not mix high voltage and comm lines"],
+        "ppe": ["Safety glasses", "Electrical gloves"],
+        "sops": ["SOP-ELC-001: Electrical-Safety"],
+        "repair_time_hours": 2.5,
+        "tools": ["Multimeter"],
+    }
 }
+
 
 
 # ─── Graph Lookup (deterministic) ─────────────────────────────────────────────
@@ -209,6 +242,8 @@ def run_rag_retrieval(error_code: str, model: Optional[str] = None) -> dict:
 def build_diagnosis_prompt(
     error_code: str,
     model: Optional[str],
+    brand: Optional[str],
+    asset_type: Optional[str],
     graph_ctx: dict,
     rag_results: dict,
 ) -> str:
@@ -233,11 +268,13 @@ def build_diagnosis_prompt(
         for r in rag_results.get("log_results", [])
     ])
 
-    prompt = f"""You are Fault-Graph AI, an expert industrial chiller diagnostic assistant.
+    prompt = f"""You are Fault-Graph AI, an expert industrial HVAC diagnostic assistant.
 
 FAULT DETECTED:
 - Error Code: {error_code}
 - Fault Name: {failure_name}
+- Brand / Manufacturer: {brand or "Unknown"}
+- Asset Type: {asset_type or "Unknown"}
 - Asset Model: {model or "Unknown"}
 - Severity: {severity.upper()}
 
@@ -254,7 +291,7 @@ SIMILAR MAINTENANCE LOG CASES:
 
 TASK: Generate a structured diagnostic report for this fault. You MUST:
 1. Identify the TOP 3 most probable root causes (ranked by likelihood)
-2. Provide a clear, step-by-step repair guide (minimum 5 steps)
+2. Provide a clear, step-by-step repair guide specific to the {brand or ''} brand and error code (minimum 5 steps). e.g., 'Samsung E1: Inspect room temperature thermistor sensor wiring and PCB connection'
 3. Include any special tool requirements
 4. Estimate repair time
 5. Note any cascade risks (if this fault can lead to other faults)
@@ -446,6 +483,8 @@ def run_diagnostic_pipeline(
         report.error_code = ocr_result.get("error_code")
         report.model = ocr_result.get("model")
         report.manufacturer = ocr_result.get("manufacturer")
+        report.brand = ocr_result.get("manufacturer") # Vision model uses brand
+        report.asset_type = ocr_result.get("asset_type")
         report.ocr_confidence = ocr_result.get("confidence", "unknown")
         report.ocr_raw_text = ocr_result.get("raw_text", "")
     elif manual_text:
@@ -508,7 +547,7 @@ def run_diagnostic_pipeline(
 
     # ── Step 4: LLM Synthesis ─────────────────────────────────────────────────
     prompt = build_diagnosis_prompt(
-        report.error_code, report.model, graph_lookup, rag_results
+        report.error_code, report.model, report.brand, report.asset_type, graph_lookup, rag_results
     )
 
     llm_result = call_llm(prompt)
@@ -546,10 +585,10 @@ if __name__ == "__main__":
     initialize_stores()
 
     # Test with manual error code
-    print("\nRunning diagnosis for error code E3...")
+    print("\nRunning diagnosis for error code E1...")
     report = run_diagnostic_pipeline(
-        manual_error_code="E3",
-        manual_model="Carrier 30RAP"
+        manual_error_code="E1",
+        manual_model="Samsung Split"
     )
 
     print(f"\n{'='*60}")

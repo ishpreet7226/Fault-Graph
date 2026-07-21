@@ -476,14 +476,14 @@ def render_diagnostic_tab():
 
         error_code_input = st.selectbox(
             "Error Code",
-            options=["", "E3", "E5", "U0", "103", "A6"],
+            options=["", "E3", "E5", "U0", "103", "A6", "E1", "C154", "CH01", "CH02", "CH05", "P8", "E6", "E9"],
             format_func=lambda x: x if x else "— Select error code —",
             key="error_code_select",
         )
 
         model_input = st.selectbox(
             "Asset Model",
-            options=["", "Carrier 30RAP", "York YVAA", "Carrier 30XA", "Trane RTAF", "Other"],
+            options=["", "Carrier 30RAP", "York YVAA", "Carrier 30XA", "Trane RTAF", "Samsung Split", "LG VRF", "Mitsubishi CityMulti", "Other"],
             format_func=lambda x: x if x else "— Select model (optional) —",
             key="model_select",
         )
@@ -618,7 +618,7 @@ def render_diagnostic_report(report):
                 </span>
                 <div style="margin-top:0.5rem; display:flex; gap:0.6rem; flex-wrap:wrap; justify-content:flex-end;">
                     {"<span style='background:rgba(0,212,255,0.1); color:#00d4ff; border:1px solid rgba(0,212,255,0.3); border-radius:4px; padding:2px 8px; font-size:0.72rem; font-family:JetBrains Mono,monospace;'>" + report.error_code + "</span>" if report.error_code else ""}
-                    {"<span style='background:rgba(139,92,246,0.1); color:#8b5cf6; border:1px solid rgba(139,92,246,0.3); border-radius:4px; padding:2px 8px; font-size:0.72rem;'>" + (report.model or "") + "</span>" if report.model else ""}
+                    {"<span style='background:rgba(139,92,246,0.1); color:#8b5cf6; border:1px solid rgba(139,92,246,0.3); border-radius:4px; padding:2px 8px; font-size:0.72rem;'>" + (report.brand or "") + " " + (report.asset_type or report.model or "") + "</span>" if (report.brand or report.model) else ""}
                     {"<span style='background:rgba(16,212,142,0.1); color:#10d48e; border:1px solid rgba(16,212,142,0.3); border-radius:4px; padding:2px 8px; font-size:0.72rem;'>🤖 AI Synthesis</span>" if report.llm_used else "<span style='background:rgba(245,158,11,0.1); color:#f59e0b; border:1px solid rgba(245,158,11,0.3); border-radius:4px; padding:2px 8px; font-size:0.72rem;'>📋 Template Mode</span>"}
                 </div>
             </div>
