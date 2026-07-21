@@ -1,5 +1,5 @@
 """
-vector_store.py — ChromaDB Vector Store for NexusOps AI
+vector_store.py — ChromaDB Vector Store for Fault-Graph AI
 Indexes OKF Markdown files and maintenance logs with metadata filters.
 Uses sentence-transformers for local embeddings (no API key required).
 """
@@ -22,8 +22,8 @@ LOGS_DIR = ROOT_DIR / "data" / "logs"
 CHROMA_DIR = ROOT_DIR / "data" / "chroma_db"
 
 # Collection names
-COLLECTION_KB = "nexusops_knowledge_base"
-COLLECTION_LOGS = "nexusops_maintenance_logs"
+COLLECTION_KB = "fault_graph_knowledge_base"
+COLLECTION_LOGS = "fault_graph_maintenance_logs"
 
 
 def get_chroma_client() -> chromadb.PersistentClient:
@@ -54,7 +54,7 @@ def get_embedding_function():
 
 def _stable_id(text: str) -> str:
     """Generate a stable, short ID from text content."""
-    return hashlib.md5(text.encode()).hexdigest()[:16]
+    return hashlib.md5(text.encode(), usedforsecurity=False).hexdigest()[:16]
 
 
 def index_knowledge_base(client: chromadb.PersistentClient) -> chromadb.Collection:
@@ -349,7 +349,7 @@ def query_maintenance_logs(
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    print("Initializing NexusOps AI vector stores...")
+    print("Initializing Fault-Graph AI vector stores...")
     kb_col, logs_col = initialize_stores()
     print(f"\nKB collection: {kb_col.count()} documents")
     print(f"Logs collection: {logs_col.count()} documents")

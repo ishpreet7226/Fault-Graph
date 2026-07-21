@@ -1,5 +1,5 @@
 """
-pipeline.py — LangChain Orchestration Pipeline for NexusOps AI
+pipeline.py — LangChain Orchestration Pipeline for Fault-Graph AI
 Connects OCR -> NetworkX Graph lookup -> ChromaDB RAG retrieval -> LLM synthesis
 Produces structured diagnostic reports with safety warnings and repair steps.
 """
@@ -7,12 +7,11 @@ Produces structured diagnostic reports with safety warnings and repair steps.
 import os
 import json
 import logging
-from pathlib import Path
 from typing import Optional
 from dataclasses import dataclass, field
 
-from src.graph_builder import get_graph, get_repair_context, find_failure_node
-from src.ocr_parser import extract_from_image, extract_from_text_input, structure_ocr_result
+from src.graph_builder import get_graph, get_repair_context
+from src.ocr_parser import extract_from_image, extract_from_text_input
 from src.vector_store import (
     get_chroma_client, initialize_stores,
     query_knowledge_base, query_maintenance_logs
@@ -23,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class DiagnosticReport:
-    """Structured output from the NexusOps AI diagnostic pipeline."""
+    """Structured output from the Fault-Graph AI diagnostic pipeline."""
     error_code: Optional[str] = None
     model: Optional[str] = None
     manufacturer: Optional[str] = None
@@ -234,7 +233,7 @@ def build_diagnosis_prompt(
         for r in rag_results.get("log_results", [])
     ])
 
-    prompt = f"""You are NexusOps AI, an expert industrial chiller diagnostic assistant.
+    prompt = f"""You are Fault-Graph AI, an expert industrial chiller diagnostic assistant.
 
 FAULT DETECTED:
 - Error Code: {error_code}
@@ -358,7 +357,6 @@ def generate_fallback_diagnosis(error_code: str, graph_ctx: dict, rag_results: d
     Rule-based fallback when no LLM API key is configured.
     Uses the knowledge graph content directly as the diagnosis.
     """
-    content = graph_ctx["graph_context"].get("content_snippet", "")
     failure_name = graph_ctx["graph_context"].get("failure_name", "Unknown Fault")
     subsystems = [s["name"] for s in graph_ctx["graph_context"].get("subsystems", [])]
 
@@ -421,7 +419,7 @@ def run_diagnostic_pipeline(
     manual_model: Optional[str] = None,
 ) -> DiagnosticReport:
     """
-    Full NexusOps AI diagnostic pipeline:
+    Full Fault-Graph AI diagnostic pipeline:
     1. OCR extraction (or manual input)
     2. Graph-based safety lookup (deterministic)
     3. RAG retrieval from ChromaDB
@@ -541,7 +539,7 @@ def run_diagnostic_pipeline(
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
-    print("=== NexusOps AI Diagnostic Pipeline Test ===\n")
+    print("=== Fault-Graph AI Diagnostic Pipeline Test ===\n")
 
     # First, ensure stores are initialized
     print("Initializing vector stores...")
@@ -559,12 +557,12 @@ if __name__ == "__main__":
     print(f"{'='*60}")
     print(f"Error Code: {report.error_code}")
     print(f"Severity: {report.severity.upper()}")
-    print(f"\n🚨 SAFETY WARNINGS:")
+    print("\n🚨 SAFETY WARNINGS:")
     for w in report.safety_warnings:
         print(f"  {w}")
     print(f"\n📋 REQUIRED SOPs: {[s['name'] for s in report.required_sops]}")
     print(f"\n🔍 ROOT CAUSE: {report.root_cause_summary[:200]}...")
-    print(f"\n🔧 REPAIR STEPS:")
+    print("\n🔧 REPAIR STEPS:")
     for step in report.repair_steps[:5]:
         print(f"  {step}")
     print(f"\n⏱  Estimated Time: {report.estimated_repair_time_hours}h")

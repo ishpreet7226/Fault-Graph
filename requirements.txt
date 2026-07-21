@@ -1,4 +1,4 @@
-# ─── NexusOps AI — Requirements ────────────────────────────────────────────────
+# ─── Fault-Graph AI — Requirements ────────────────────────────────────────────────
 # Production-ready Graph-RAG Industrial Diagnostic Assistant
 
 # ── Core Web Framework ──

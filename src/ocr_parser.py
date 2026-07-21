@@ -1,5 +1,5 @@
 """
-ocr_parser.py — OCR Text Extraction for NexusOps AI
+ocr_parser.py — OCR Text Extraction for Fault-Graph AI
 Accepts image bytes or file path, extracts text using EasyOCR
 (with pytesseract as fallback), and outputs structured JSON.
 """
@@ -119,23 +119,26 @@ def parse_error_code(text: str) -> Optional[str]:
     """
     text_upper = text.upper()
 
+    # Normalize potential spaces in error codes (e.g., "E 1" -> "E1")
+    text_normalized = re.sub(r'\b([A-Z])\s+(\d{1,3})\b', r'\1\2', text_upper)
+
     # Check known codes directly
     for code in KNOWN_ERROR_CODES:
         # Look for the code as a standalone token (not part of longer string)
-        if re.search(rf"\b{re.escape(code)}\b", text_upper):
+        if re.search(rf"\b{re.escape(code)}\b", text_normalized):
             return code
 
     # Regex patterns for alarm codes
     patterns = [
-        r"\bALARM[:\s]+([A-Z]\d+|\d{3})\b",
-        r"\bFAULT[:\s]+([A-Z]\d+|\d{3})\b",
-        r"\bERROR[:\s]+([A-Z]\d+|\d{3})\b",
-        r"\bCODE[:\s]+([A-Z]\d+|\d{3})\b",
+        r"\bALARM[:\s]*([A-Z]\d+|\d{3})\b",
+        r"\bFAULT[:\s]*([A-Z]\d+|\d{3})\b",
+        r"\bERROR[:\s]*([A-Z]\d+|\d{3})\b",
+        r"\bCODE[:\s]*([A-Z]\d+|\d{3})\b",
         r"\b([EFU]\d{1,2})\b",
         r"\b(\d{3})\b",  # 3-digit codes like 103
     ]
     for pattern in patterns:
-        match = re.search(pattern, text_upper)
+        match = re.search(pattern, text_normalized)
         if match:
             candidate = match.group(1)
             return candidate

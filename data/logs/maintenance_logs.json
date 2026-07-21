@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "generated": "2024-07-15",
-    "description": "Synthetic maintenance logs organized into 3 sequential failure stories for NexusOps AI training data",
+    "description": "Synthetic maintenance logs organized into 3 sequential failure stories for Fault-Graph AI training data",
     "total_entries": 27,
     "stories": [
       "Story 1: Carrier 30RAP condenser fouling cascade (E3 -> A6 -> E3)",

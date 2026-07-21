@@ -1,10 +1,9 @@
 """
-graph_builder.py — OKF Knowledge Graph Builder for NexusOps AI
+graph_builder.py — OKF Knowledge Graph Builder for Fault-Graph AI
 Parses all Markdown files with YAML frontmatter and [[wikilinks]] into a
 directed NetworkX graph for deterministic graph-based lookups.
 """
 
-import os
 import re
 import yaml
 import networkx as nx
@@ -243,8 +242,8 @@ def get_graph() -> nx.DiGraph:
 if __name__ == "__main__":
     G = build_graph()
     print("\n--- Graph Summary ---")
-    print(f"Nodes: {list(G.nodes())[:10]}...")
-    print(f"\nRepair context for E3:")
+    print("Nodes:", list(G.nodes())[:10], "...")
+    print("\nRepair context for E3:")
     import json
     ctx = get_repair_context("E3", G)
     print(json.dumps(ctx, indent=2, default=str))

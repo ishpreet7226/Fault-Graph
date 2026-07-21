@@ -1,4 +1,4 @@
-# ⚡ NexusOps AI
+# ⚡ Fault-Graph AI
 
 **Hybrid Graph-RAG Diagnostic Assistant for Industrial HVAC Assets**
 
@@ -10,7 +10,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                        NexusOps AI Pipeline                         │
+│                        Fault-Graph AI Pipeline                         │
 │                                                                     │
 │  📸 Panel Photo                                                     │
 │      ↓                                                              │
@@ -74,7 +74,7 @@ Open `http://localhost:8501` in your browser.
 ## 📁 Project Structure
 
 ```
-NexusOps-AI/
+Fault-Graph-AI/
 ├── data/
 │   ├── knowledge_base/          # OKF Markdown files (18 files)
 │   │   ├── assets/              # Chiller assets (Carrier 30RAP, York YVAA)
@@ -167,4 +167,4 @@ MIT License — See LICENSE file for details.
 
 ---
 
-*Built with ⚡ by NexusOps AI — Graph-RAG Industrial Diagnostic System*
+*Built with ⚡ by Fault-Graph AI — Graph-RAG Industrial Diagnostic System*

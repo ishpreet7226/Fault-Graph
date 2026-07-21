@@ -1,5 +1,5 @@
 """
-app.py — NexusOps AI Streamlit Dashboard
+app.py — Fault-Graph AI Streamlit Dashboard
 Production-ready multi-tab diagnostic assistant for industrial HVAC assets.
 """
 
@@ -18,20 +18,20 @@ sys.path.insert(0, str(ROOT_DIR))
 
 # ─── Page Config (MUST be first Streamlit call) ───────────────────────────────
 st.set_page_config(
-    page_title="NexusOps AI — Industrial Diagnostic Assistant",
+    page_title="Fault-Graph AI — Industrial Diagnostic Assistant",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         "Get Help": "https://github.com/ishpreet7226/Fault-Graph",
         "Report a bug": "https://github.com/ishpreet7226/Fault-Graph/issues",
-        "About": "NexusOps AI — Graph-RAG Industrial Diagnostic System v1.0",
+        "About": "Fault-Graph AI — Graph-RAG Industrial Diagnostic System v1.0",
     }
 )
 
 # ─── Logging Setup ────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("nexusops")
+logger = logging.getLogger("fault_graph")
 
 # ─── CSS Injection ────────────────────────────────────────────────────────────
 st.markdown("""
@@ -279,7 +279,7 @@ def render_sidebar():
         <div style="text-align:center; padding: 1.2rem 0.5rem 1rem;">
             <div style="font-size:2.5rem; margin-bottom:0.3rem;">⚡</div>
             <h2 style="color:#00d4ff; font-size:1.3rem; font-weight:800; margin:0; letter-spacing:0.05em;">
-                NexusOps AI
+                Fault-Graph AI
             </h2>
             <p style="color:#8892b0; font-size:0.72rem; margin-top:0.3rem; letter-spacing:0.08em;">
                 INDUSTRIAL DIAGNOSTIC SYSTEM
@@ -330,8 +330,8 @@ def render_sidebar():
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
-            except Exception:
-                pass
+            except Exception as e:
+                logger.debug(f"Failed to check vector store status: {e}")
 
         # LLM status
         has_openai = bool(os.getenv("OPENAI_API_KEY"))
@@ -387,9 +387,9 @@ def render_sidebar():
         st.markdown("---")
         st.markdown("""
         <p style="color:#546478; font-size:0.68rem; text-align:center; line-height:1.6;">
-            NexusOps AI v1.0<br>
+            Fault-Graph AI v1.0<br>
             Graph-RAG Industrial Diagnostic<br>
-            © 2024 NexusOps Systems
+            © 2024 Fault-Graph Systems
         </p>
         """, unsafe_allow_html=True)
 
@@ -1136,20 +1136,19 @@ def render_logs_tab():
     with log_tab:
         logs_data = load_maintenance_logs()
         logs = logs_data.get("logs", [])
-        meta = logs_data.get("metadata", {})
 
         # Summary row
         col_s1, col_s2, col_s3, col_s4 = st.columns(4)
         with col_s1:
             st.metric("Total Logs", len(logs))
         with col_s2:
-            stories = len(set(l.get("story", 0) for l in logs))
+            stories = len(set(log_item.get("story", 0) for log_item in logs))
             st.metric("Failure Stories", stories)
         with col_s3:
-            resolved = len([l for l in logs if "RESOLVED" in l.get("outcome", "")])
+            resolved = len([log_item for log_item in logs if "RESOLVED" in log_item.get("outcome", "")])
             st.metric("✅ Resolved", resolved)
         with col_s4:
-            critical = len([l for l in logs if l.get("event_type") in ("alarm", "emergency_service")])
+            critical = len([log_item for log_item in logs if log_item.get("event_type") in ("alarm", "emergency_service")])
             st.metric("🚨 Alarm Events", critical)
 
         # Filters
@@ -1163,13 +1162,13 @@ def render_logs_tab():
         with fc2:
             code_filter = st.selectbox(
                 "Filter by Error Code",
-                ["All Codes"] + sorted(set(l.get("error_code", "N/A") for l in logs if l.get("error_code"))),
+                ["All Codes"] + sorted(set(log_item.get("error_code", "N/A") for log_item in logs if log_item.get("error_code"))),
                 key="log_code_filter",
             )
         with fc3:
             type_filter = st.selectbox(
                 "Filter by Event Type",
-                ["All Types"] + sorted(set(l.get("event_type", "") for l in logs)),
+                ["All Types"] + sorted(set(log_item.get("event_type", "") for log_item in logs)),
                 key="log_type_filter",
             )
 
@@ -1177,11 +1176,11 @@ def render_logs_tab():
         filtered_logs = logs
         if story_filter != "All Stories":
             story_num = int(story_filter.split()[-1])
-            filtered_logs = [l for l in filtered_logs if l.get("story") == story_num]
+            filtered_logs = [log_item for log_item in filtered_logs if log_item.get("story") == story_num]
         if code_filter != "All Codes":
-            filtered_logs = [l for l in filtered_logs if l.get("error_code") == code_filter]
+            filtered_logs = [log_item for log_item in filtered_logs if log_item.get("error_code") == code_filter]
         if type_filter != "All Types":
-            filtered_logs = [l for l in filtered_logs if l.get("event_type") == type_filter]
+            filtered_logs = [log_item for log_item in filtered_logs if log_item.get("event_type") == type_filter]
 
         st.markdown(f"<p style='color:#8892b0; font-size:0.8rem;'>Showing {len(filtered_logs)} of {len(logs)} logs</p>",
                     unsafe_allow_html=True)
@@ -1189,7 +1188,6 @@ def render_logs_tab():
         for log in filtered_logs:
             ec = log.get("error_code")
             outcome = log.get("outcome", "")
-            ev_type = log.get("event_type", "")
             story = log.get("story", "?")
 
             outcome_color = "#10d48e" if "RESOLVED" in outcome else "#f59e0b" if "PARTIAL" in outcome or "PROGRESS" in outcome else "#ef4444"
@@ -1293,7 +1291,7 @@ def render_logs_tab():
                 try:
                     count = kb_col.count()
                     st.metric("Documents", count)
-                    st.markdown(f"Collection: `nexusops_knowledge_base`")
+                    st.markdown("Collection: `fault_graph_knowledge_base`")
                 except Exception:
                     st.error("Collection unavailable")
             else:
@@ -1312,7 +1310,7 @@ def render_logs_tab():
                 try:
                     count = logs_col.count()
                     st.metric("Documents", count)
-                    st.markdown(f"Collection: `nexusops_maintenance_logs`")
+                    st.markdown("Collection: `fault_graph_maintenance_logs`")
                 except Exception:
                     st.error("Collection unavailable")
             else:
@@ -1344,8 +1342,8 @@ def main():
     render_sidebar()
 
     # Warm up resources in background
-    with st.spinner("Initializing NexusOps AI..."):
-        G = load_graph()
+    with st.spinner("Initializing Fault-Graph AI..."):
+        _ = load_graph()
         kb_col, logs_col = load_vector_stores()
 
     # Main tabs
