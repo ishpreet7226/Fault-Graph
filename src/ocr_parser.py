@@ -22,6 +22,14 @@ KNOWN_ERROR_CODES = {
     "C154", "CH01", "CH02", "CH05", "P8"
 }
 
+BRAND_ERROR_SCHEMAS = {
+    "samsung": {"E1", "E2", "E3", "E4", "E5", "C154"},
+    "lg": {"CH01", "CH02", "CH03", "CH04", "CH05", "CH06"},
+    "mitsubishi": {"P8", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9"},
+    "daikin": {"E3", "E5", "U0", "A6"},
+    "carrier": {"103", "E1", "E2"}
+}
+
 KNOWN_MODELS = [
     "30RAP", "30XA", "30HXC", "30RB", "30RA",    # Carrier
     "YVAA", "YVWA", "YKVL", "YK", "YMC2",         # York
@@ -121,30 +129,49 @@ def extract_text(image_source: Union[bytes, str, Path]) -> str:
 def clean_7segment_error_code(raw_code: str, brand: Optional[str]) -> str:
     """
     Post-processing cleaner for common 7-segment display OCR mistakes.
-    Maps mistaken codes to valid ones based on the brand context.
+    Maps mistaken codes to valid ones based on the brand context and validates
+    against model error code schemas.
     """
     if not raw_code:
         return raw_code
 
     code_upper = raw_code.upper()
+    mapped_code = code_upper
     
     # Common 7-segment mapping rules
     # OCR might see 'E7' when it's really 'E1' depending on the segment styling
     
-    if brand and brand.lower() == "samsung":
-        if code_upper == "E7":
-            # Samsung has E1, not E7 typically for this segment group
-            return "E1"
-        if code_upper == "E5" or code_upper == "ES":
-            return "E5"
-            
-    if brand and brand.lower() == "lg":
-        if code_upper == "CH0I" or code_upper == "CHO1":
-            return "CH01"
-        if code_upper == "CH0S" or code_upper == "CHO5":
-            return "CH05"
+    if brand:
+        b_lower = brand.lower()
+        if b_lower == "samsung" or b_lower == "windfree":
+            if code_upper == "E7":
+                mapped_code = "E1"
+            elif code_upper == "E5" or code_upper == "ES":
+                mapped_code = "E5"
+            elif code_upper == "C1S4":
+                mapped_code = "C154"
+                
+        elif b_lower == "lg":
+            if code_upper == "CH0I" or code_upper == "CHO1":
+                mapped_code = "CH01"
+            elif code_upper == "CH0S" or code_upper == "CHO5":
+                mapped_code = "CH05"
+            elif code_upper == "CHO2":
+                mapped_code = "CH02"
 
-    return code_upper
+        # Validate against known schema for the brand if available
+        if b_lower in BRAND_ERROR_SCHEMAS:
+            valid_codes = BRAND_ERROR_SCHEMAS[b_lower]
+            if mapped_code in valid_codes:
+                return mapped_code
+            elif code_upper in valid_codes:
+                return code_upper
+            else:
+                # If neither the mapped nor the raw code is in the schema, 
+                # but we applied a mapping, return the mapped one anyway as a best guess
+                return mapped_code
+
+    return mapped_code
 
 
 def extract_with_vision_model(image_source: Union[bytes, str, Path]) -> Optional[dict]:
@@ -175,7 +202,7 @@ def extract_with_vision_model(image_source: Union[bytes, str, Path]) -> Optional
         "2. asset_type: E.g., 'Split AC', 'VRF', 'Chiller'. "
         "3. error_code: The exact error code or alarm shown on the display. "
         "4. confidence: Your confidence as a float between 0.0 and 1.0. "
-        "JSON format must exactly match: {\"brand\": \"...\", \"asset_type\": \"...\", \"error_code\": \"...\", \"confidence\": 0.95}"
+        "JSON format must exactly match: {\"brand\": \"Samsung\", \"asset_type\": \"Split AC\", \"error_code\": \"E1\", \"confidence\": 0.95}"
     )
 
     try:

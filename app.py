@@ -782,10 +782,11 @@ def render_diagnostic_report(report):
 
     # ── Step-by-Step Repair Guide ──────────────────────────────────────────────
     if report.repair_steps:
-        st.markdown("""
+        brand_prefix = f"{report.brand.upper()} " if report.brand else ""
+        st.markdown(f"""
         <h3 style="color:#10d48e; font-size:1rem; font-weight:700;
                    letter-spacing:0.05em; margin:1.5rem 0 0.8rem;">
-            🔧 STEP-BY-STEP REPAIR GUIDE
+            🔧 {brand_prefix}STEP-BY-STEP REPAIR GUIDE
         </h3>
         """, unsafe_allow_html=True)
 
