@@ -1,0 +1,37 @@
+# ─── NexusOps AI — Requirements ────────────────────────────────────────────────
+# Production-ready Graph-RAG Industrial Diagnostic Assistant
+
+# ── Core Web Framework ──
+streamlit>=1.35.0
+
+# ── Graph & Data ──
+networkx>=3.3
+pyyaml>=6.0.1
+
+# ── Vector Store & Embeddings ──
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# ── OCR ──
+easyocr>=1.7.1
+pillow>=10.3.0
+# pytesseract>=0.3.10  # Optional fallback (requires tesseract binary installed)
+
+# ── LangChain Orchestration ──
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+
+# ── LLM Provider Adapters (install what you use) ──
+langchain-openai>=0.1.0          # OpenAI GPT-4o / GPT-4o-mini
+langchain-google-genai>=1.0.0    # Google Gemini
+langchain-anthropic>=0.1.0       # Anthropic Claude
+
+# ── Graph Visualization ──
+streamlit-agraph>=0.0.45
+pyvis>=0.3.2
+
+# ── Utilities ──
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+numpy>=1.26.0
