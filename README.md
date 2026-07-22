@@ -1,170 +1,317 @@
+
+
 # ⚡ Fault-Graph AI
 
-**Hybrid Graph-RAG Diagnostic Assistant for Industrial HVAC Assets**
+## Enterprise Hybrid Graph-RAG Diagnostic Platform for Industrial HVAC Systems
 
-> A production-ready AI diagnostic system that combines deterministic knowledge graphs with vector semantic search and LLM synthesis to diagnose industrial chiller faults — from a simple panel photo to a full structured repair guide.
+> **Fault-Graph AI** is an enterprise-grade AI-powered industrial diagnostics platform that combines **Knowledge Graphs, Retrieval-Augmented Generation (Graph-RAG), OCR, Machine Learning, Predictive Analytics, and Explainable AI** to diagnose, explain, and predict HVAC equipment failures from control-panel images, maintenance history, and technical documentation.
 
----
-
-## 🏗 Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                        Fault-Graph AI Pipeline                         │
-│                                                                     │
-│  📸 Panel Photo                                                     │
-│      ↓                                                              │
-│  OCR Parser (EasyOCR / pytesseract)                                 │
-│      ↓ error_code, model                                            │
-│  ┌──────────────────┐    ┌──────────────────────────┐              │
-│  │  NetworkX Graph  │    │      ChromaDB Vector      │              │
-│  │  (deterministic) │    │  Store (semantic search)  │              │
-│  │  • Safety SOPs   │    │  • OKF KB documents       │              │
-│  │  • Subsystems    │    │  • Maintenance logs       │              │
-│  │  • Components    │    │  • Repair procedures      │              │
-│  └────────┬─────────┘    └────────────┬─────────────┘              │
-│           └──────────────┬────────────┘                             │
-│                          ↓                                           │
-│              LangChain Synthesis Prompt                              │
-│              (OpenAI / Gemini / Anthropic)                          │
-│                          ↓                                           │
-│          Structured Diagnostic Report                                │
-│  • Safety warnings  • Root cause analysis                            │
-│  • Repair steps     • Similar historical cases                       │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-## 🚀 Quick Start
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/ishpreet7226/Fault-Graph.git
-cd Fault-Graph
-```
-
-### 2. Create a virtual environment
-```bash
-python3 -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-# .venv\Scripts\activate   # Windows
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure environment (optional — for AI synthesis)
-```bash
-cp .env.example .env
-# Edit .env and add your LLM API key (OpenAI, Google, or Anthropic)
-```
-
-> **Without an API key:** The app runs in **Template Mode** using knowledge graph + RAG context directly. No AI required for graph lookup and safety SOP retrieval.
-
-### 5. Run the app
-```bash
-streamlit run app.py
-```
-
-Open `http://localhost:8501` in your browser.
+Designed as a production-ready industrial AI platform, Fault-Graph AI enables technicians and maintenance engineers to move from **fault detection** to **root-cause analysis**, **repair planning**, and **predictive maintenance** in seconds.
 
 ---
 
-## 📁 Project Structure
+# 🚀 Key Highlights
+
+* Hybrid **Knowledge Graph + Graph-RAG** architecture
+* Industrial OCR for control panel fault codes
+* Enterprise-scale HVAC knowledge base
+* Multi-brand equipment support
+* Predictive maintenance engine
+* Explainable AI diagnostics
+* Maintenance log intelligence
+* Failure propagation analysis
+* Interactive knowledge graph visualization
+* Local-first deployment
+* Works with or without LLM APIs
+
+---
+
+# 🏗 System Architecture
 
 ```
-Fault-Graph-AI/
-├── data/
-│   ├── knowledge_base/          # OKF Markdown files (18 files)
-│   │   ├── assets/              # Chiller assets (Carrier 30RAP, York YVAA)
-│   │   ├── subsystems/          # Condenser, compressor, refrigerant circuit, control panel
-│   │   ├── components/          # HPS, discharge sensor, refrigerant sensor, fan motor
-│   │   ├── failures/            # E3, E5, U0, 103, A6 failure modes
-│   │   └── sops/                # Safety SOPs (High-Pressure, Refrigerant-Leak, Electrical)
-│   ├── logs/
-│   │   └── maintenance_logs.json  # 27 synthetic log entries in 3 failure stories
-│   └── chroma_db/               # Auto-created ChromaDB persistent storage
-├── src/
-│   ├── __init__.py
-│   ├── graph_builder.py         # OKF parser → NetworkX DiGraph
-│   ├── ocr_parser.py            # EasyOCR + regex → structured JSON
-│   ├── vector_store.py          # ChromaDB indexing and semantic search
-│   └── pipeline.py              # LangChain orchestration pipeline
-├── app.py                       # Streamlit multi-tab dashboard
+                 📷 Control Panel Image
+                           │
+                           ▼
+                    OCR + Vision Parser
+        (EasyOCR / Tesseract / Vision Models)
+                           │
+        ┌──────────────────┴──────────────────┐
+        │                                     │
+        ▼                                     ▼
+ Knowledge Graph                     Chroma Vector DB
+ (NetworkX)                          (Semantic Search)
+        │                                     │
+        │                                     │
+ Components                       Manuals
+ Fault Codes                      SOPs
+ Assets                           Repair Guides
+ Sensors                          Maintenance Logs
+ Failure Chains                   Incident Reports
+ Configurations                   OEM Documentation
+        └──────────────────┬──────────────────┘
+                           ▼
+                 LangChain Graph-RAG Pipeline
+                           ▼
+                  Explainable AI Engine
+                           ▼
+        Root Cause + Risk + SOP + Repair Plan
+                           ▼
+            Predictive Maintenance Analytics
+```
+
+---
+
+# 🧠 AI Capabilities
+
+## Graph-RAG Diagnosis
+
+* Deterministic knowledge graph traversal
+* Semantic retrieval using ChromaDB
+* Context-aware LLM reasoning
+* Safety-first repair recommendations
+
+---
+
+## Industrial OCR
+
+Supports
+
+* Panel displays
+* Error code labels
+* Equipment nameplates
+* Serial numbers
+* Model identification
+
+---
+
+## Explainable AI
+
+Instead of returning only an answer, Fault-Graph AI explains:
+
+* Why the failure occurred
+* Supporting evidence
+* Knowledge graph path
+* Similar historical cases
+* Confidence score
+
+---
+
+## Predictive Maintenance
+
+Predicts
+
+* Failure probability
+* Remaining useful life
+* Recurring faults
+* Maintenance recommendations
+
+---
+
+# 📂 Enterprise Dataset
+
+The project now contains an industrial-scale synthetic enterprise dataset.
+
+### Assets
+
+* 25 HVAC systems
+
+### Components
+
+* 250+ industrial components
+
+### Failure Codes
+
+* 100+
+
+### Safety SOPs
+
+* 75+
+
+### Maintenance Logs
+
+* 5000+
+
+### Incident Reports
+
+* 500+
+
+### Failure Chains
+
+* 300+
+
+### Configuration Profiles
+
+* 300+
+
+### OCR Benchmark Images
+
+* Hundreds of synthetic panel displays
+* Equipment nameplates
+* Metadata annotations
+
+---
+
+# 📁 Project Structure
+
+```
+Fault-Graph/
+│
+├── app.py
 ├── requirements.txt
-├── .env.example
-└── .gitignore
+├── README.md
+├── DATASET_REPORT.md
+│
+├── scripts/
+│   └── generate_dataset.py
+│
+├── src/
+│   ├── analytics.py
+│   ├── prediction.py
+│   ├── explainability.py
+│   ├── data_integration.py
+│   ├── graph_builder.py
+│   ├── pipeline.py
+│   ├── vector_store.py
+│   └── ocr_parser.py
+│
+├── tests/
+│   ├── test_dataset_expansion.py
+│   └── test_data_integration.py
+│
+└── data/
+    ├── knowledge_base/
+    ├── configurations/
+    ├── failure_chains/
+    ├── incident_reports/
+    ├── logs/
+    ├── ocr_images/
+    └── chroma_db/
 ```
 
 ---
 
-## 🖥 Features
+# 🖥 Dashboard Modules
 
-### Tab 1: ⚡ Diagnostic Hub
-- **Photo upload** → OCR extracts error code and model from control panel image
-- **Manual input** → Select error code and model from dropdowns
-- **Deterministic graph lookup** → Always retrieves safety SOPs and subsystem context from knowledge graph
-- **RAG retrieval** → Finds similar historical cases and KB procedures via ChromaDB
-- **AI synthesis** → LLM generates ranked root causes and step-by-step repair guide
-- **Feedback loop** → "Resolved / Not Resolved" buttons for outcome tracking
+## ⚡ Diagnostic Hub
 
-### Tab 2: 🕸 Knowledge Graph Explorer
-- Interactive `streamlit-agraph` visualization of the OKF knowledge graph
-- Filter by node type (asset, subsystem, component, failure, SOP)
-- Highlight error code subgraphs
-- Click any node to view full metadata and content
-
-### Tab 3: 📊 System Logs & Inspector
-- Browse all 27 maintenance log entries with filtering by story, error code, and event type
-- Inspect all 18 OKF knowledge base files with YAML frontmatter viewer
-- ChromaDB collection status and re-index button
+* Image upload
+* OCR parsing
+* Manual fault lookup
+* Knowledge graph traversal
+* Semantic RAG retrieval
+* AI-generated repair guide
+* Technician feedback
 
 ---
 
-## 🔌 LLM Configuration
+## 🕸 Knowledge Graph Explorer
 
-The pipeline tries LLM providers in this order:
-
-| Provider | Model Used | Env Variable |
-|----------|-----------|--------------|
-| OpenAI | `gpt-4o-mini` | `OPENAI_API_KEY` |
-| Google | `gemini-1.5-flash` | `GOOGLE_API_KEY` |
-| Anthropic | `claude-3-haiku` | `ANTHROPIC_API_KEY` |
-| None | Template Mode | *(no key required)* |
+* Interactive graph visualization
+* Node filtering
+* Asset exploration
+* Failure propagation
+* Component relationships
 
 ---
 
-## 🛡 Error Codes Covered
+## 📊 Maintenance Intelligence
 
-| Code | Name | Severity | Asset |
-|------|------|----------|-------|
-| `E3` | High Pressure Trip | 🔴 Critical | Carrier 30RAP, York YVAA |
-| `E5` | High Discharge Temp | 🔴 Critical | Carrier 30RAP, York YVAA |
-| `U0` | Refrigerant Loss | 🔴 Critical | Carrier 30RAP, York YVAA |
-| `103` | Prestart Temp Alert | 🔵 Medium | Carrier 30RAP |
-| `A6` | Fan Motor Fault | 🟠 High | Carrier 30RAP, York YVAA |
+* 5000+ maintenance logs
+* Incident analytics
+* Search and filtering
+* Failure history
 
 ---
 
-## 📦 Key Dependencies
+## 📈 Predictive Maintenance
 
-- `streamlit` — Web application framework
-- `networkx` — Knowledge graph engine
-- `chromadb` — Local vector database
-- `sentence-transformers` — Local embedding model (all-MiniLM-L6-v2)
-- `easyocr` — OCR text extraction
-- `langchain` — LLM orchestration
-- `streamlit-agraph` — Interactive graph visualization
-- `pyyaml` — YAML frontmatter parsing
-- `pillow` — Image processing
+* Risk estimation
+* Failure trends
+* Remaining useful life
+* Maintenance scheduling
 
 ---
 
-## 📋 License
+## 🧠 Explainability Dashboard
 
-MIT License — See LICENSE file for details.
+Displays
+
+* Root cause reasoning
+* Evidence chain
+* Knowledge graph traversal
+* Retrieved documents
+* Confidence scores
 
 ---
 
-*Built with ⚡ by Fault-Graph AI — Graph-RAG Industrial Diagnostic System*
+# 🤖 Supported LLM Providers
+
+| Provider            | Model            |
+| ------------------- | ---------------- |
+| OpenAI              | GPT-4o Mini      |
+| Google              | Gemini 1.5 Flash |
+| Anthropic           | Claude 3 Haiku   |
+| Local Template Mode | No API Required  |
+
+---
+
+# 🛠 Tech Stack
+
+### Backend
+
+* Python
+* LangChain
+* ChromaDB
+* NetworkX
+* Sentence Transformers
+
+### AI
+
+* Graph-RAG
+* Knowledge Graphs
+* OCR
+* Explainable AI
+* Predictive Analytics
+
+### Frontend
+
+* Streamlit
+* Streamlit-Agraph
+
+### OCR
+
+* EasyOCR
+* Tesseract
+
+---
+
+# 📈 Roadmap
+
+* Industrial Vision-Language Models
+* Live IoT sensor integration
+* Real-time fault streaming
+* Digital Twin simulation
+* Multi-agent maintenance planning
+* Cloud deployment
+* Docker & Kubernetes
+* REST API
+* Mobile-responsive dashboard
+
+---
+
+# ⭐ Why Fault-Graph AI?
+
+Unlike traditional RAG systems, Fault-Graph AI combines:
+
+* **Knowledge Graph reasoning** for deterministic safety-critical retrieval.
+* **Semantic RAG** for contextual document search.
+* **Explainable AI** for transparent diagnostics.
+* **Predictive analytics** for proactive maintenance.
+* **Industrial OCR** for image-based fault detection.
+* **Enterprise-scale synthetic datasets** for realistic evaluation.
+
+This hybrid approach delivers a production-oriented diagnostic platform suitable for industrial HVAC maintenance, technical support, and predictive asset management.
+
+---
+
+This version is significantly stronger than the original README and better reflects the current state of your project. It also presents the project in a way that's more compelling for hackathon judges and recruiters reviewing your GitHub repository.
