@@ -1,13 +1,15 @@
 ---
-id: "FAIL-MIT-E1"
-type: "failure_mode"
-name: "E1 PCB Control Error"
-severity: "high"
-equipment_type: "Split AC"
-manufacturer: "Mitsubishi"
-error_code: "E1"
-subsystems: ["control_board"]
-components: ["indoor_pcb"]
+id: FAIL-MIT-E1
+type: failure_mode
+name: E1 PCB Control Error
+severity: high
+equipment_type: Split AC
+manufacturer: Mitsubishi
+error_code: E1
+subsystems:
+- control_board
+components:
+- indoor_pcb
 ---
 
 # E1 PCB Control Error

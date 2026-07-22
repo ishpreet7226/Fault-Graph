@@ -1,0 +1,20 @@
+{
+  "id": "INC-385",
+  "timeline": [
+    "385 hour review",
+    "388 hour escalation",
+    "390 hour recovery"
+  ],
+  "symptoms": [
+    "alarm burst",
+    "equipment slowdown",
+    "unexpected shutdown"
+  ],
+  "engineer_notes": "Site telemetry indicated drift in sensor readings and a secondary control fault near the asset controller.",
+  "actions": [
+    "isolated service panel",
+    "replaced suspect module",
+    "verified safe restart"
+  ],
+  "lessons_learned": "Early intervention and better preventive maintenance reduce repeat outages."
+}

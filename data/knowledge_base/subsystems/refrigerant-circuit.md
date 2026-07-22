@@ -1,22 +1,29 @@
 ---
 id: subsystems/refrigerant-circuit
 type: subsystem
-name: "Refrigerant Circuit"
+name: Refrigerant Circuit
 parent_assets:
-  - assets/chiller-carrier-30rap
-  - assets/chiller-york-yvaa
+- assets/chiller-carrier-30rap
+- assets/chiller-york-yvaa
 severity: critical
 components:
-  - components/refrigerant-level-sensor
-  - components/high-pressure-switch
-tags: [refrigerant, R-410A, R-134a, circuit, leak, TXV, EEV]
+- components/refrigerant-level-sensor
+- components/high-pressure-switch
+tags:
+- refrigerant
+- r-410a
+- r-134a
+- circuit
+- leak
+- txv
+- eev
 connected_failures:
-  - failures/U0-refrigerant-loss
-  - failures/E3-high-pressure-trip
-  - failures/E5-high-discharge-temp
+- failures/U0-refrigerant-loss
+- failures/E3-high-pressure-trip
+- failures/E5-high-discharge-temp
 connected_sops:
-  - sops/sop-refrigerant-leak-check
-  - sops/sop-high-pressure-lockout
+- sops/sop-refrigerant-leak-check
+- sops/sop-high-pressure-lockout
 ---
 
 # Refrigerant Circuit

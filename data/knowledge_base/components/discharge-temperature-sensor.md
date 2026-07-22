@@ -1,23 +1,31 @@
 ---
 id: components/discharge-temperature-sensor
 type: component
-name: "Compressor Discharge Temperature Sensor"
+name: Compressor Discharge Temperature Sensor
 part_numbers:
-  - "DTS-NTC-10K"
-  - "DTS-PT100-3W"
+- DTS-NTC-10K
+- DTS-PT100-3W
 sensor_type: NTC thermistor / PT100 RTD
-temperature_range_f: [-40, 300]
+temperature_range_f:
+- -40
+- 300
 alarm_setpoint_f: 220
 trip_setpoint_f: 240
 severity: high
-tags: [temperature, sensor, discharge, compressor, thermistor, RTD]
+tags:
+- temperature
+- sensor
+- discharge
+- compressor
+- thermistor
+- rtd
 parent_subsystems:
-  - subsystems/compressor-unit
-  - subsystems/electrical-control-panel
+- subsystems/compressor-unit
+- subsystems/electrical-control-panel
 connected_failures:
-  - failures/E5-high-discharge-temp
+- failures/E5-high-discharge-temp
 connected_sops:
-  - sops/sop-electrical-safety
+- sops/sop-electrical-safety
 ---
 
 # Compressor Discharge Temperature Sensor

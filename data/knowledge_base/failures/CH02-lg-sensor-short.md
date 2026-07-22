@@ -1,13 +1,16 @@
 ---
-id: "FAIL-LG-CH02"
-type: "failure_mode"
-name: "CH02 Indoor Pipe Thermistor Open/Short"
-severity: "high"
-equipment_type: "VRF/Split"
-manufacturer: "LG"
-error_code: "CH02"
-subsystems: ["sensors", "refrigeration_circuit"]
-components: ["pipe_thermistor"]
+id: FAIL-LG-CH02
+type: failure_mode
+name: CH02 Indoor Pipe Thermistor Open/Short
+severity: high
+equipment_type: VRF/Split
+manufacturer: LG
+error_code: CH02
+subsystems:
+- sensors
+- refrigeration_circuit
+components:
+- pipe_thermistor
 ---
 
 # CH02 Indoor Pipe Thermistor Open/Short

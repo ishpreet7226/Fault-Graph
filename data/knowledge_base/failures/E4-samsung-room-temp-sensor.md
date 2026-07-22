@@ -1,13 +1,17 @@
 ---
-id: "FAIL-SAMSUNG-E4"
-type: "failure_mode"
-name: "E4 Room Temperature Sensor Error"
-severity: "medium"
-equipment_type: "Split AC"
-manufacturer: "Samsung"
-error_code: "E4"
-subsystems: ["sensors", "control_board"]
-components: ["room_temp_sensor", "indoor_pcb"]
+id: FAIL-SAMSUNG-E4
+type: failure_mode
+name: E4 Room Temperature Sensor Error
+severity: medium
+equipment_type: Split AC
+manufacturer: Samsung
+error_code: E4
+subsystems:
+- sensors
+- control_board
+components:
+- room_temp_sensor
+- indoor_pcb
 ---
 
 # E4 Room Temperature Sensor Error

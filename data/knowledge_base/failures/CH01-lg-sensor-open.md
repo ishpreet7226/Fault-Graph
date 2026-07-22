@@ -1,13 +1,15 @@
 ---
-id: "FAIL-LG-CH01"
-type: "failure_mode"
-name: "CH01 Room Air Thermistor Open/Short"
-severity: "medium"
-equipment_type: "VRF/Split"
-manufacturer: "LG"
-error_code: "CH01"
-subsystems: ["sensors"]
-components: ["room_thermistor"]
+id: FAIL-LG-CH01
+type: failure_mode
+name: CH01 Room Air Thermistor Open/Short
+severity: medium
+equipment_type: VRF/Split
+manufacturer: LG
+error_code: CH01
+subsystems:
+- sensors
+components:
+- room_thermistor
 ---
 
 # CH01 Room Air Thermistor Open/Short

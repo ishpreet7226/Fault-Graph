@@ -1,22 +1,27 @@
 ---
 id: subsystems/compressor-unit
 type: subsystem
-name: "Compressor Unit"
+name: Compressor Unit
 parent_assets:
-  - assets/chiller-carrier-30rap
-  - assets/chiller-york-yvaa
+- assets/chiller-carrier-30rap
+- assets/chiller-york-yvaa
 severity: critical
 components:
-  - components/discharge-temperature-sensor
-  - components/high-pressure-switch
-tags: [compressor, scroll, screw, compression, refrigeration-cycle]
+- components/discharge-temperature-sensor
+- components/high-pressure-switch
+tags:
+- compressor
+- scroll
+- screw
+- compression
+- refrigeration-cycle
 connected_failures:
-  - failures/E3-high-pressure-trip
-  - failures/E5-high-discharge-temp
-  - failures/U0-refrigerant-loss
+- failures/E3-high-pressure-trip
+- failures/E5-high-discharge-temp
+- failures/U0-refrigerant-loss
 connected_sops:
-  - sops/sop-high-pressure-lockout
-  - sops/sop-refrigerant-leak-check
+- sops/sop-high-pressure-lockout
+- sops/sop-refrigerant-leak-check
 ---
 
 # Compressor Unit

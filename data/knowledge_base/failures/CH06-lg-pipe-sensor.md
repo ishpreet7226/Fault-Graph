@@ -1,13 +1,17 @@
 ---
-id: "FAIL-LG-CH06"
-type: "failure_mode"
-name: "CH06 Indoor Pipe Sensor Error"
-severity: "medium"
-equipment_type: "Split AC/VRF"
-manufacturer: "LG"
-error_code: "CH06"
-subsystems: ["sensors", "control_board"]
-components: ["indoor_pipe_sensor", "indoor_pcb"]
+id: FAIL-LG-CH06
+type: failure_mode
+name: CH06 Indoor Pipe Sensor Error
+severity: medium
+equipment_type: Split AC/VRF
+manufacturer: LG
+error_code: CH06
+subsystems:
+- sensors
+- control_board
+components:
+- indoor_pipe_sensor
+- indoor_pcb
 ---
 
 # CH06 Indoor Pipe Sensor Error

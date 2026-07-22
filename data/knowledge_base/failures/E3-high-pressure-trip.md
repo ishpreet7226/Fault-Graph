@@ -1,29 +1,35 @@
 ---
 id: failures/E3-high-pressure-trip
 type: failure
-name: "E3 — High Pressure Trip"
-error_code: "E3"
+name: E3 — High Pressure Trip
+error_code: E3
 severity: critical
 affected_models:
-  - "Carrier 30RAP"
-  - "York YVAA"
+- Carrier 30RAP
+- York YVAA
 affected_subsystems:
-  - subsystems/condenser-assembly
-  - subsystems/compressor-unit
-  - subsystems/refrigerant-circuit
+- subsystems/condenser-assembly
+- subsystems/compressor-unit
+- subsystems/refrigerant-circuit
 affected_components:
-  - components/high-pressure-switch
+- components/high-pressure-switch
 root_causes:
-  - "Fouled or blocked condenser coil"
-  - "Condenser fan motor failure (see A6)"
-  - "High ambient temperature (>115°F)"
-  - "Refrigerant overcharge"
-  - "Non-condensable gases in refrigerant circuit"
-  - "Blocked/restricted liquid line"
+- Fouled or blocked condenser coil
+- Condenser fan motor failure (see A6)
+- High ambient temperature (>115°F)
+- Refrigerant overcharge
+- Non-condensable gases in refrigerant circuit
+- Blocked/restricted liquid line
 connected_sops:
-  - sops/sop-high-pressure-lockout
-  - sops/sop-refrigerant-leak-check
-tags: [E3, high-pressure, trip, lockout, critical, compressor]
+- sops/sop-high-pressure-lockout
+- sops/sop-refrigerant-leak-check
+tags:
+- e3
+- high-pressure
+- trip
+- lockout
+- critical
+- compressor
 ---
 
 # E3 — High Pressure Trip

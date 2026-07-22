@@ -1,13 +1,18 @@
 ---
-id: "FAIL-MIT-E4"
-type: "failure_mode"
-name: "E4 Signal Error"
-severity: "high"
-equipment_type: "Split AC"
-manufacturer: "Mitsubishi"
-error_code: "E4"
-subsystems: ["communication", "control_board"]
-components: ["comm_cable", "indoor_pcb", "outdoor_pcb"]
+id: FAIL-MIT-E4
+type: failure_mode
+name: E4 Signal Error
+severity: high
+equipment_type: Split AC
+manufacturer: Mitsubishi
+error_code: E4
+subsystems:
+- communication
+- control_board
+components:
+- comm_cable
+- indoor_pcb
+- outdoor_pcb
 ---
 
 # E4 Signal Error

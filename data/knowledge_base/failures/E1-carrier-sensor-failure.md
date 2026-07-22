@@ -1,13 +1,17 @@
 ---
-id: "FAIL-CAR-E1"
-type: "failure_mode"
-name: "E1 Sensor / Board Failure"
-severity: "high"
-equipment_type: "Chiller"
-manufacturer: "Carrier"
-error_code: "E1"
-subsystems: ["sensors", "control_board"]
-components: ["thermistor", "main_board"]
+id: FAIL-CAR-E1
+type: failure_mode
+name: E1 Sensor / Board Failure
+severity: high
+equipment_type: Chiller
+manufacturer: Carrier
+error_code: E1
+subsystems:
+- sensors
+- control_board
+components:
+- thermistor
+- main_board
 ---
 
 # E1 Sensor / Board Failure

@@ -1,13 +1,18 @@
 ---
-id: "FAIL-MIT-E9"
-type: "failure_mode"
-name: "E9 Indoor/Outdoor Communication Error"
-severity: "critical"
-equipment_type: "VRF/Split"
-manufacturer: "Mitsubishi"
-error_code: "E9"
-subsystems: ["communication", "control_board"]
-components: ["comm_cable", "indoor_pcb", "outdoor_pcb"]
+id: FAIL-MIT-E9
+type: failure_mode
+name: E9 Indoor/Outdoor Communication Error
+severity: critical
+equipment_type: VRF/Split
+manufacturer: Mitsubishi
+error_code: E9
+subsystems:
+- communication
+- control_board
+components:
+- comm_cable
+- indoor_pcb
+- outdoor_pcb
 ---
 
 # E9 Indoor/Outdoor Communication Error

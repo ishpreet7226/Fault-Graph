@@ -51,12 +51,21 @@ class DiagnosticReport:
     similar_cases: list[dict] = field(default_factory=list)
     knowledge_sources: list[str] = field(default_factory=list)
     
+    # Explainability & prediction
+    confidence_score: float = 0.0
+    reasoning_chain: list[dict] = field(default_factory=list)
+    evidence_items: list[dict] = field(default_factory=list)
+    failure_prediction: dict = field(default_factory=dict)
+    timeline_events: list[dict] = field(default_factory=list)
+    multi_image_results: list[dict] = field(default_factory=list)
+
     # Metadata
     ocr_confidence: str = "unknown"
     ocr_raw_text: str = ""
     llm_used: bool = False
     fallback_mode: bool = False
     diagnosis_notes: str = ""
+    graph_match: bool = False
 
     def to_dict(self) -> dict:
         return {
@@ -451,6 +460,7 @@ def generate_fallback_diagnosis(error_code: str, graph_ctx: dict, rag_results: d
 
 def run_diagnostic_pipeline(
     image_source=None,
+    image_sources: Optional[list] = None,
     manual_text: Optional[str] = None,
     manual_error_code: Optional[str] = None,
     manual_model: Optional[str] = None,
@@ -478,6 +488,17 @@ def run_diagnostic_pipeline(
         report.error_code = manual_error_code.upper()
         report.model = manual_model
         report.ocr_confidence = "manual"
+    elif image_sources:
+        from src.ocr_parser import extract_from_multiple_images
+        merged = extract_from_multiple_images(image_sources)
+        report.error_code = merged.get("error_code")
+        report.model = merged.get("model")
+        report.manufacturer = merged.get("manufacturer")
+        report.brand = merged.get("manufacturer")
+        report.asset_type = merged.get("asset_type")
+        report.ocr_confidence = merged.get("confidence", "unknown")
+        report.ocr_raw_text = merged.get("raw_text", "")
+        report.multi_image_results = merged.get("per_image", [])
     elif image_source is not None:
         ocr_result = extract_from_image(image_source)
         report.error_code = ocr_result.get("error_code")
@@ -511,6 +532,7 @@ def run_diagnostic_pipeline(
 
     report.severity = graph_ctx.get("severity", "unknown")
     report.failure_name = graph_ctx.get("failure_name", f"Error {report.error_code}")
+    report.graph_match = graph_ctx.get("failure_name", "Unknown Fault") != "Unknown Fault"
     report.safety_warnings = graph_lookup["safety_warnings"]
     report.required_ppe = graph_lookup["required_ppe"]
     report.required_sops = [
@@ -568,9 +590,36 @@ def run_diagnostic_pipeline(
         report.estimated_repair_time_hours = llm_result["estimated_repair_time_hours"]
     report.diagnosis_notes = llm_result.get("diagnosis_notes", "")
 
+    # ── Step 5: Explainability, Timeline, Prediction ─────────────────────────
+    from src.explainability import (
+        compute_confidence_score, build_reasoning_chain, build_evidence_items
+    )
+    from src.prediction import compute_failure_prediction
+    from src.analytics import build_failure_timeline
+
+    report.confidence_score = compute_confidence_score(
+        report.ocr_confidence, report.knowledge_sources,
+        report.similar_cases, report.llm_used, report.graph_match,
+    )
+    report.reasoning_chain = build_reasoning_chain(
+        report.error_code, report.model, report.brand,
+        report.ocr_confidence, report.failure_name,
+        report.knowledge_sources, report.similar_cases,
+        report.required_sops, report.affected_subsystems,
+        report.llm_used, report.graph_match,
+    )
+    report.evidence_items = build_evidence_items(report, report.graph_match)
+    report.failure_prediction = compute_failure_prediction(
+        report.error_code, report.model, report.severity,
+    )
+    report.timeline_events = build_failure_timeline(
+        report.error_code, report.model,
+    )
+
     logger.info(
         f"[pipeline] Diagnosis complete for {report.error_code} | "
-        f"LLM: {report.llm_used} | Severity: {report.severity}"
+        f"LLM: {report.llm_used} | Severity: {report.severity} | "
+        f"Confidence: {report.confidence_score}%"
     )
     return report
 

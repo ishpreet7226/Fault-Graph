@@ -1,0 +1,7502 @@
+[
+  {
+    "id": "CFG-001",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 451,
+    "temperature": 56,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-002",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 452,
+    "temperature": 57,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-003",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 453,
+    "temperature": 58,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-004",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 454,
+    "temperature": 59,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-005",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 455,
+    "temperature": 60,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-006",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 456,
+    "temperature": 61,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-007",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 457,
+    "temperature": 62,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-008",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 458,
+    "temperature": 63,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-009",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 459,
+    "temperature": 64,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-010",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 460,
+    "temperature": 65,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-011",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 461,
+    "temperature": 66,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-012",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 462,
+    "temperature": 67,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-013",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 463,
+    "temperature": 68,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-014",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 464,
+    "temperature": 69,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-015",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 465,
+    "temperature": 70,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-016",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 466,
+    "temperature": 71,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-017",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 467,
+    "temperature": 72,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-018",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 468,
+    "temperature": 73,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-019",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 469,
+    "temperature": 74,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-020",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 470,
+    "temperature": 75,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-021",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 471,
+    "temperature": 76,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-022",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 472,
+    "temperature": 77,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-023",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 473,
+    "temperature": 78,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-024",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 474,
+    "temperature": 79,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-025",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 475,
+    "temperature": 55,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-026",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 476,
+    "temperature": 56,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-027",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 477,
+    "temperature": 57,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-028",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 478,
+    "temperature": 58,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-029",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 479,
+    "temperature": 59,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-030",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 480,
+    "temperature": 60,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-031",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 481,
+    "temperature": 61,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-032",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 482,
+    "temperature": 62,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-033",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 483,
+    "temperature": 63,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-034",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 484,
+    "temperature": 64,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-035",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 485,
+    "temperature": 65,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-036",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 486,
+    "temperature": 66,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-037",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 487,
+    "temperature": 67,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-038",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 488,
+    "temperature": 68,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-039",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 489,
+    "temperature": 69,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-040",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 490,
+    "temperature": 70,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-041",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 491,
+    "temperature": 71,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-042",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 492,
+    "temperature": 72,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-043",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 493,
+    "temperature": 73,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-044",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 494,
+    "temperature": 74,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-045",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 495,
+    "temperature": 75,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-046",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 496,
+    "temperature": 76,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-047",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 497,
+    "temperature": 77,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-048",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 498,
+    "temperature": 78,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-049",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 499,
+    "temperature": 79,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-050",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 500,
+    "temperature": 55,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-051",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 501,
+    "temperature": 56,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-052",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 502,
+    "temperature": 57,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-053",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 503,
+    "temperature": 58,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-054",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 504,
+    "temperature": 59,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-055",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 505,
+    "temperature": 60,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-056",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 506,
+    "temperature": 61,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-057",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 507,
+    "temperature": 62,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-058",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 508,
+    "temperature": 63,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-059",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 509,
+    "temperature": 64,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-060",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 510,
+    "temperature": 65,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-061",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 511,
+    "temperature": 66,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-062",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 512,
+    "temperature": 67,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-063",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 513,
+    "temperature": 68,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-064",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 514,
+    "temperature": 69,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-065",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 515,
+    "temperature": 70,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-066",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 516,
+    "temperature": 71,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-067",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 517,
+    "temperature": 72,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-068",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 518,
+    "temperature": 73,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-069",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 519,
+    "temperature": 74,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-070",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 520,
+    "temperature": 75,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-071",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 521,
+    "temperature": 76,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-072",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 522,
+    "temperature": 77,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-073",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 523,
+    "temperature": 78,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-074",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 524,
+    "temperature": 79,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-075",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 525,
+    "temperature": 55,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-076",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 526,
+    "temperature": 56,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-077",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 527,
+    "temperature": 57,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-078",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 528,
+    "temperature": 58,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-079",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 529,
+    "temperature": 59,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-080",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 450,
+    "temperature": 60,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-081",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 451,
+    "temperature": 61,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-082",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 452,
+    "temperature": 62,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-083",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 453,
+    "temperature": 63,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-084",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 454,
+    "temperature": 64,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-085",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 455,
+    "temperature": 65,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-086",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 456,
+    "temperature": 66,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-087",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 457,
+    "temperature": 67,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-088",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 458,
+    "temperature": 68,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-089",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 459,
+    "temperature": 69,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-090",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 460,
+    "temperature": 70,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-091",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 461,
+    "temperature": 71,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-092",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 462,
+    "temperature": 72,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-093",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 463,
+    "temperature": 73,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-094",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 464,
+    "temperature": 74,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-095",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 465,
+    "temperature": 75,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-096",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 466,
+    "temperature": 76,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-097",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 467,
+    "temperature": 77,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-098",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 468,
+    "temperature": 78,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-099",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 469,
+    "temperature": 79,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-100",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 470,
+    "temperature": 55,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-101",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 471,
+    "temperature": 56,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-102",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 472,
+    "temperature": 57,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-103",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 473,
+    "temperature": 58,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-104",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 474,
+    "temperature": 59,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-105",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 475,
+    "temperature": 60,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-106",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 476,
+    "temperature": 61,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-107",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 477,
+    "temperature": 62,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-108",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 478,
+    "temperature": 63,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-109",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 479,
+    "temperature": 64,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-110",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 480,
+    "temperature": 65,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-111",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 481,
+    "temperature": 66,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-112",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 482,
+    "temperature": 67,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-113",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 483,
+    "temperature": 68,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-114",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 484,
+    "temperature": 69,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-115",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 485,
+    "temperature": 70,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-116",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 486,
+    "temperature": 71,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-117",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 487,
+    "temperature": 72,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-118",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 488,
+    "temperature": 73,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-119",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 489,
+    "temperature": 74,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-120",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 490,
+    "temperature": 75,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-121",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 491,
+    "temperature": 76,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-122",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 492,
+    "temperature": 77,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-123",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 493,
+    "temperature": 78,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-124",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 494,
+    "temperature": 79,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-125",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 495,
+    "temperature": 55,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-126",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 496,
+    "temperature": 56,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-127",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 497,
+    "temperature": 57,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-128",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 498,
+    "temperature": 58,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-129",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 499,
+    "temperature": 59,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-130",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 500,
+    "temperature": 60,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-131",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 501,
+    "temperature": 61,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-132",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 502,
+    "temperature": 62,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-133",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 503,
+    "temperature": 63,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-134",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 504,
+    "temperature": 64,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-135",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 505,
+    "temperature": 65,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-136",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 506,
+    "temperature": 66,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-137",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 507,
+    "temperature": 67,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-138",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 508,
+    "temperature": 68,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-139",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 509,
+    "temperature": 69,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-140",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 510,
+    "temperature": 70,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-141",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 511,
+    "temperature": 71,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-142",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 512,
+    "temperature": 72,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-143",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 513,
+    "temperature": 73,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-144",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 514,
+    "temperature": 74,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-145",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 515,
+    "temperature": 75,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-146",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 516,
+    "temperature": 76,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-147",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 517,
+    "temperature": 77,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-148",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 518,
+    "temperature": 78,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-149",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 519,
+    "temperature": 79,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-150",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 520,
+    "temperature": 55,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-151",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 521,
+    "temperature": 56,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-152",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 522,
+    "temperature": 57,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-153",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 523,
+    "temperature": 58,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-154",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 524,
+    "temperature": 59,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-155",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 525,
+    "temperature": 60,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-156",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 526,
+    "temperature": 61,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-157",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 527,
+    "temperature": 62,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-158",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 528,
+    "temperature": 63,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-159",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 529,
+    "temperature": 64,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-160",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 450,
+    "temperature": 65,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-161",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 451,
+    "temperature": 66,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-162",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 452,
+    "temperature": 67,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-163",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 453,
+    "temperature": 68,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-164",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 454,
+    "temperature": 69,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-165",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 455,
+    "temperature": 70,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-166",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 456,
+    "temperature": 71,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-167",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 457,
+    "temperature": 72,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-168",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 458,
+    "temperature": 73,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-169",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 459,
+    "temperature": 74,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-170",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 460,
+    "temperature": 75,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-171",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 461,
+    "temperature": 76,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-172",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 462,
+    "temperature": 77,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-173",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 463,
+    "temperature": 78,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-174",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 464,
+    "temperature": 79,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-175",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 465,
+    "temperature": 55,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-176",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 466,
+    "temperature": 56,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-177",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 467,
+    "temperature": 57,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-178",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 468,
+    "temperature": 58,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-179",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 469,
+    "temperature": 59,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-180",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 470,
+    "temperature": 60,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-181",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 471,
+    "temperature": 61,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-182",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 472,
+    "temperature": 62,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-183",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 473,
+    "temperature": 63,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-184",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 474,
+    "temperature": 64,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-185",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 475,
+    "temperature": 65,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-186",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 476,
+    "temperature": 66,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-187",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 477,
+    "temperature": 67,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-188",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 478,
+    "temperature": 68,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-189",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 479,
+    "temperature": 69,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-190",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 480,
+    "temperature": 70,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-191",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 481,
+    "temperature": 71,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-192",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 482,
+    "temperature": 72,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-193",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 483,
+    "temperature": 73,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-194",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 484,
+    "temperature": 74,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-195",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 485,
+    "temperature": 75,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-196",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 486,
+    "temperature": 76,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-197",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 487,
+    "temperature": 77,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-198",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 488,
+    "temperature": 78,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-199",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 489,
+    "temperature": 79,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-200",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 490,
+    "temperature": 55,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-201",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 491,
+    "temperature": 56,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-202",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 492,
+    "temperature": 57,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-203",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 493,
+    "temperature": 58,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-204",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 494,
+    "temperature": 59,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-205",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 495,
+    "temperature": 60,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-206",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 496,
+    "temperature": 61,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-207",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 497,
+    "temperature": 62,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-208",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 498,
+    "temperature": 63,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-209",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 499,
+    "temperature": 64,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-210",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 500,
+    "temperature": 65,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-211",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 501,
+    "temperature": 66,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-212",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 502,
+    "temperature": 67,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-213",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 503,
+    "temperature": 68,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-214",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 504,
+    "temperature": 69,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-215",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 505,
+    "temperature": 70,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-216",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 506,
+    "temperature": 71,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-217",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 507,
+    "temperature": 72,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-218",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 508,
+    "temperature": 73,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-219",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 509,
+    "temperature": 74,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-220",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 510,
+    "temperature": 75,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-221",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 511,
+    "temperature": 76,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-222",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 512,
+    "temperature": 77,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-223",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 513,
+    "temperature": 78,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-224",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 514,
+    "temperature": 79,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-225",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 515,
+    "temperature": 55,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-226",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 516,
+    "temperature": 56,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-227",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 517,
+    "temperature": 57,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-228",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 518,
+    "temperature": 58,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-229",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 519,
+    "temperature": 59,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-230",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 520,
+    "temperature": 60,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-231",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 521,
+    "temperature": 61,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-232",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 522,
+    "temperature": 62,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-233",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 523,
+    "temperature": 63,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-234",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 524,
+    "temperature": 64,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-235",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 525,
+    "temperature": 65,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-236",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 526,
+    "temperature": 66,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-237",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 527,
+    "temperature": 67,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-238",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 528,
+    "temperature": 68,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-239",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 529,
+    "temperature": 69,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-240",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 450,
+    "temperature": 70,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-241",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 451,
+    "temperature": 71,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-242",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 452,
+    "temperature": 72,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-243",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 453,
+    "temperature": 73,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-244",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 454,
+    "temperature": 74,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-245",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 455,
+    "temperature": 75,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-246",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 456,
+    "temperature": 76,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-247",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 457,
+    "temperature": 77,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-248",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 458,
+    "temperature": 78,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-249",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 459,
+    "temperature": 79,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-250",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 460,
+    "temperature": 55,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-251",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 461,
+    "temperature": 56,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-252",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 462,
+    "temperature": 57,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-253",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 463,
+    "temperature": 58,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-254",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 464,
+    "temperature": 59,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-255",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 465,
+    "temperature": 60,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-256",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 466,
+    "temperature": 61,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-257",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 467,
+    "temperature": 62,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-258",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 468,
+    "temperature": 63,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-259",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 469,
+    "temperature": 64,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-260",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 470,
+    "temperature": 65,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-261",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 471,
+    "temperature": 66,
+    "fan_speed": 81,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-262",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 472,
+    "temperature": 67,
+    "fan_speed": 82,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-263",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 473,
+    "temperature": 68,
+    "fan_speed": 83,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-264",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 474,
+    "temperature": 69,
+    "fan_speed": 84,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-265",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 475,
+    "temperature": 70,
+    "fan_speed": 85,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-266",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 476,
+    "temperature": 71,
+    "fan_speed": 86,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-267",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 477,
+    "temperature": 72,
+    "fan_speed": 87,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-268",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 478,
+    "temperature": 73,
+    "fan_speed": 88,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-269",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 479,
+    "temperature": 74,
+    "fan_speed": 89,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-270",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 480,
+    "temperature": 75,
+    "fan_speed": 90,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-271",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 481,
+    "temperature": 76,
+    "fan_speed": 91,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-272",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 482,
+    "temperature": 77,
+    "fan_speed": 92,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-273",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 483,
+    "temperature": 78,
+    "fan_speed": 93,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-274",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 484,
+    "temperature": 79,
+    "fan_speed": 94,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-275",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 485,
+    "temperature": 55,
+    "fan_speed": 95,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-276",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 486,
+    "temperature": 56,
+    "fan_speed": 96,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-277",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 487,
+    "temperature": 57,
+    "fan_speed": 97,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-278",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 488,
+    "temperature": 58,
+    "fan_speed": 98,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-279",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 489,
+    "temperature": 59,
+    "fan_speed": 99,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-280",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 490,
+    "temperature": 60,
+    "fan_speed": 60,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-281",
+    "voltage": 461,
+    "current": 71,
+    "pressure": 491,
+    "temperature": 61,
+    "fan_speed": 61,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-282",
+    "voltage": 462,
+    "current": 72,
+    "pressure": 492,
+    "temperature": 62,
+    "fan_speed": 62,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-283",
+    "voltage": 463,
+    "current": 73,
+    "pressure": 493,
+    "temperature": 63,
+    "fan_speed": 63,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-284",
+    "voltage": 464,
+    "current": 74,
+    "pressure": 494,
+    "temperature": 64,
+    "fan_speed": 64,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-285",
+    "voltage": 460,
+    "current": 75,
+    "pressure": 495,
+    "temperature": 65,
+    "fan_speed": 65,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-286",
+    "voltage": 461,
+    "current": 76,
+    "pressure": 496,
+    "temperature": 66,
+    "fan_speed": 66,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-287",
+    "voltage": 462,
+    "current": 77,
+    "pressure": 497,
+    "temperature": 67,
+    "fan_speed": 67,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-288",
+    "voltage": 463,
+    "current": 78,
+    "pressure": 498,
+    "temperature": 68,
+    "fan_speed": 68,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-289",
+    "voltage": 464,
+    "current": 79,
+    "pressure": 499,
+    "temperature": 69,
+    "fan_speed": 69,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-290",
+    "voltage": 460,
+    "current": 80,
+    "pressure": 500,
+    "temperature": 70,
+    "fan_speed": 70,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-291",
+    "voltage": 461,
+    "current": 81,
+    "pressure": 501,
+    "temperature": 71,
+    "fan_speed": 71,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-292",
+    "voltage": 462,
+    "current": 82,
+    "pressure": 502,
+    "temperature": 72,
+    "fan_speed": 72,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-293",
+    "voltage": 463,
+    "current": 83,
+    "pressure": 503,
+    "temperature": 73,
+    "fan_speed": 73,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-294",
+    "voltage": 464,
+    "current": 84,
+    "pressure": 504,
+    "temperature": 74,
+    "fan_speed": 74,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-295",
+    "voltage": 460,
+    "current": 85,
+    "pressure": 505,
+    "temperature": 75,
+    "fan_speed": 75,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-296",
+    "voltage": 461,
+    "current": 86,
+    "pressure": 506,
+    "temperature": 76,
+    "fan_speed": 76,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-297",
+    "voltage": 462,
+    "current": 87,
+    "pressure": 507,
+    "temperature": 77,
+    "fan_speed": 77,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-298",
+    "voltage": 463,
+    "current": 88,
+    "pressure": 508,
+    "temperature": 78,
+    "fan_speed": 78,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-299",
+    "voltage": 464,
+    "current": 89,
+    "pressure": 509,
+    "temperature": 79,
+    "fan_speed": 79,
+    "mode": "cool",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  },
+  {
+    "id": "CFG-300",
+    "voltage": 460,
+    "current": 70,
+    "pressure": 510,
+    "temperature": 55,
+    "fan_speed": 80,
+    "mode": "auto",
+    "thresholds": {
+      "high": 520,
+      "low": 400
+    },
+    "operating_window": {
+      "min": 40,
+      "max": 90
+    },
+    "expected_range": {
+      "min": 450,
+      "max": 520
+    },
+    "fault_range": {
+      "min": 530,
+      "max": 650
+    }
+  }
+]

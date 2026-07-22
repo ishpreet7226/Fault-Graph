@@ -1,13 +1,18 @@
 ---
-id: "FAIL-MIT-E6"
-type: "failure_mode"
-name: "E6 Indoor/Outdoor Communication Error"
-severity: "critical"
-equipment_type: "VRF/Split"
-manufacturer: "Mitsubishi"
-error_code: "E6"
-subsystems: ["communication", "control_board"]
-components: ["comm_cable", "indoor_pcb", "outdoor_pcb"]
+id: FAIL-MIT-E6
+type: failure_mode
+name: E6 Indoor/Outdoor Communication Error
+severity: critical
+equipment_type: VRF/Split
+manufacturer: Mitsubishi
+error_code: E6
+subsystems:
+- communication
+- control_board
+components:
+- comm_cable
+- indoor_pcb
+- outdoor_pcb
 ---
 
 # E6 Indoor/Outdoor Communication Error

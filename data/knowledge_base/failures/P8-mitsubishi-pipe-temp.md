@@ -1,13 +1,16 @@
 ---
-id: "FAIL-MIT-P8"
-type: "failure_mode"
-name: "P8 Pipe Temperature Error"
-severity: "medium"
-equipment_type: "VRF/Split"
-manufacturer: "Mitsubishi"
-error_code: "P8"
-subsystems: ["sensors", "refrigeration_circuit"]
-components: ["pipe_thermistor"]
+id: FAIL-MIT-P8
+type: failure_mode
+name: P8 Pipe Temperature Error
+severity: medium
+equipment_type: VRF/Split
+manufacturer: Mitsubishi
+error_code: P8
+subsystems:
+- sensors
+- refrigeration_circuit
+components:
+- pipe_thermistor
 ---
 
 # P8 Pipe Temperature Error

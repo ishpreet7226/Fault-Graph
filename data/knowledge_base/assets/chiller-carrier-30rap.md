@@ -1,60 +1,70 @@
 ---
 id: asset/chiller-carrier-30rap
 type: asset
-name: "Carrier 30RAP Air-Cooled Chiller"
-model: "Carrier 30RAP"
-manufacturer: "Carrier Corporation"
-capacity_tons: [50, 60, 75, 90, 110, 130]
+name: Carrier 30RAP Air-Cooled Chiller
+model: Carrier 30RAP
+manufacturer: Carrier
+capacity: 50-130 tons
 refrigerant: R-410A
-voltage: "460V/3Ph/60Hz"
 severity: critical
-tags: [chiller, air-cooled, HVAC, industrial]
+installed_date: '2020-01-15'
+health_score: 72
+tags:
+- asset
+- hvac
+- industrial
 connected_subsystems:
-  - subsystems/condenser-assembly
-  - subsystems/compressor-unit
-  - subsystems/refrigerant-circuit
-  - subsystems/electrical-control-panel
+- subsystems/condenser-assembly
+- subsystems/compressor-unit
+- subsystems/refrigerant-circuit
+- subsystems/electrical-control-panel
+- subsystems/evaporator-coil
+- subsystems/expansion-valve
 known_error_codes:
-  - failures/E3-high-pressure-trip
-  - failures/E5-high-discharge-temp
-  - failures/U0-refrigerant-loss
-  - failures/103-prestart-temp-alert
-  - failures/A6-fan-motor-fault
+- failures/E3-high-pressure-trip
+- failures/E5-high-discharge-temperatur
+- failures/U0-refrigerant-loss---low-ch
+- failures/103-prestart-temperature-aler
+- failures/A6-fan-motor-fault
+- failures/E1-sensor---thermistor-fault
+- failures/E2-indoor-thermistor-error
+- failures/F1-compressor-overcurrent
+- failures/H1-high-pressure-sensor-faul
 ---
 
 # Carrier 30RAP Air-Cooled Chiller
 
 ## Overview
-The **Carrier 30RAP** is a high-efficiency air-cooled scroll chiller designed for commercial and light industrial HVAC applications. It employs multiple scroll compressors, direct-drive condenser fans, and an advanced microprocessor control system (Carrier Pro-Dialog Plus).
+The **Carrier 30RAP** manufactured by **Carrier Corporation** is a production HVAC asset
+with capacity **50-130 tons** using **R-410A** refrigerant.
 
 ## Major Subsystems
-
-The chiller integrates the following core subsystems:
-
-- [[subsystems/condenser-assembly]] — Air-cooled finned-tube coils with variable-speed fans
-- [[subsystems/compressor-unit]] — Tandem or single scroll compressor banks
-- [[subsystems/refrigerant-circuit]] — R-410A refrigerant loop with TXV and filter dryer
-- [[subsystems/electrical-control-panel]] — Pro-Dialog Plus controller with alarm management
+- [[subsystems/condenser-assembly]]
+- [[subsystems/compressor-unit]]
+- [[subsystems/refrigerant-circuit]]
+- [[subsystems/electrical-control-panel]]
+- [[subsystems/evaporator-coil]]
+- [[subsystems/expansion-valve]]
 
 ## Known Failure Modes
-
-The following fault codes are documented for this asset:
-
-- [[failures/E3-high-pressure-trip]] — High refrigerant discharge pressure event
-- [[failures/E5-high-discharge-temp]] — Compressor discharge temperature exceeded limit
-- [[failures/U0-refrigerant-loss]] — Low refrigerant / system pressure anomaly
-- [[failures/103-prestart-temp-alert]] — Leaving water temperature alert during startup
-- [[failures/A6-fan-motor-fault]] — Condenser fan motor electrical fault
+- [[failures/e3-high-pressure-trip]]
+- [[failures/e5-high-discharge-temperature]]
+- [[failures/u0-refrigerant-loss---low-charge]]
+- [[failures/103-prestart-temperature-alert]]
+- [[failures/a6-fan-motor-fault]]
+- [[failures/e1-sensor---thermistor-fault]]
+- [[failures/e2-indoor-thermistor-error]]
+- [[failures/f1-compressor-overcurrent]]
+- [[failures/h1-high-pressure-sensor-fault]]
 
 ## Maintenance Schedule
 | Interval | Task |
 |----------|------|
-| Monthly  | Inspect condenser coil cleanliness, check refrigerant sight glass |
-| Quarterly| Verify fan motor amperage, test high-pressure cutout switch |
-| Annually | Full refrigerant system check, electrical connection torque verification |
+| Monthly  | Visual inspection, filter check, alarm log review |
+| Quarterly| Refrigerant check, electrical connections, fan amperage |
+| Annually | Full system audit, oil analysis, coil cleaning |
 
 ## Safety Requirements
-All work on this asset requires compliance with:
 - [[sops/sop-high-pressure-lockout]]
 - [[sops/sop-refrigerant-leak-check]]
 - [[sops/sop-electrical-safety]]

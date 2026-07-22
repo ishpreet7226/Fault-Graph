@@ -1,13 +1,17 @@
 ---
-id: "FAIL-SAM-C154"
-type: "failure_mode"
-name: "C154 Indoor Fan Motor Error"
-severity: "high"
-equipment_type: "Split AC"
-manufacturer: "Samsung"
-error_code: "C154"
-subsystems: ["air_handling", "control_board"]
-components: ["indoor_fan_motor", "pcb"]
+id: FAIL-SAM-C154
+type: failure_mode
+name: C154 Indoor Fan Motor Error
+severity: high
+equipment_type: Split AC
+manufacturer: Samsung
+error_code: C154
+subsystems:
+- air_handling
+- control_board
+components:
+- indoor_fan_motor
+- pcb
 ---
 
 # C154 Indoor Fan Motor Error

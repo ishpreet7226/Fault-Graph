@@ -1,0 +1,16 @@
+{
+  "id": "CHAIN-044",
+  "timeline": [
+    "44h - initial alarm",
+    "45h - secondary warning",
+    "46h - shutdown"
+  ],
+  "sensor_readings": [
+    "pressure rising",
+    "temperature high",
+    "current imbalance"
+  ],
+  "configuration": "mode=auto; fan=80%; threshold=high",
+  "repair": "Replaced sensor and cleaned affected coil",
+  "outcome": "resolved"
+}

@@ -1,30 +1,36 @@
 ---
 id: failures/E5-high-discharge-temp
 type: failure
-name: "E5 — High Discharge Temperature"
-error_code: "E5"
+name: E5 — High Discharge Temperature
+error_code: E5
 severity: critical
 affected_models:
-  - "Carrier 30RAP"
-  - "York YVAA"
+- Carrier 30RAP
+- York YVAA
 affected_subsystems:
-  - subsystems/compressor-unit
-  - subsystems/refrigerant-circuit
-  - subsystems/condenser-assembly
+- subsystems/compressor-unit
+- subsystems/refrigerant-circuit
+- subsystems/condenser-assembly
 affected_components:
-  - components/discharge-temperature-sensor
-  - components/high-pressure-switch
+- components/discharge-temperature-sensor
+- components/high-pressure-switch
 root_causes:
-  - "Low refrigerant charge (high superheat)"
-  - "Condenser fouling / inadequate heat rejection"
-  - "TXV/EEV malfunction (low flow)"
-  - "Compressor valve failure (internal bypass)"
-  - "Excessive suction superheat"
-  - "Defective discharge temperature sensor"
+- Low refrigerant charge (high superheat)
+- Condenser fouling / inadequate heat rejection
+- TXV/EEV malfunction (low flow)
+- Compressor valve failure (internal bypass)
+- Excessive suction superheat
+- Defective discharge temperature sensor
 connected_sops:
-  - sops/sop-high-pressure-lockout
-  - sops/sop-refrigerant-leak-check
-tags: [E5, discharge-temperature, thermal, compressor, overheating, critical]
+- sops/sop-high-pressure-lockout
+- sops/sop-refrigerant-leak-check
+tags:
+- e5
+- discharge-temperature
+- thermal
+- compressor
+- overheating
+- critical
 ---
 
 # E5 — High Discharge Temperature

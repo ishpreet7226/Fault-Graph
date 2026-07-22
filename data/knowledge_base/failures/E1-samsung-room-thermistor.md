@@ -1,13 +1,17 @@
 ---
-id: "FAIL-SAM-E1"
-type: "failure_mode"
-name: "E1 Room Thermistor Sensor Error"
-severity: "medium"
-equipment_type: "Split AC"
-manufacturer: "Samsung"
-error_code: "E1"
-subsystems: ["sensors", "control_board"]
-components: ["room_thermistor", "pcb"]
+id: FAIL-SAM-E1
+type: failure_mode
+name: E1 Room Thermistor Sensor Error
+severity: medium
+equipment_type: Split AC
+manufacturer: Samsung
+error_code: E1
+subsystems:
+- sensors
+- control_board
+components:
+- room_thermistor
+- pcb
 ---
 
 # E1 Room Thermistor Sensor Error

@@ -1,24 +1,29 @@
 ---
 id: components/high-pressure-switch
 type: component
-name: "High Pressure Safety Switch"
+name: High Pressure Safety Switch
 part_numbers:
-  - "HPS-410A-650"
-  - "HPS-134A-280"
+- HPS-410A-650
+- HPS-134A-280
 pressure_setpoint_psi:
   R-410A: 650
   R-134a: 280
 auto_reset: false
 severity: critical
-tags: [pressure, safety, cutout, refrigerant, switch]
+tags:
+- pressure
+- safety
+- cutout
+- refrigerant
+- switch
 parent_subsystems:
-  - subsystems/condenser-assembly
-  - subsystems/compressor-unit
-  - subsystems/refrigerant-circuit
+- subsystems/condenser-assembly
+- subsystems/compressor-unit
+- subsystems/refrigerant-circuit
 connected_failures:
-  - failures/E3-high-pressure-trip
+- failures/E3-high-pressure-trip
 connected_sops:
-  - sops/sop-high-pressure-lockout
+- sops/sop-high-pressure-lockout
 ---
 
 # High Pressure Safety Switch

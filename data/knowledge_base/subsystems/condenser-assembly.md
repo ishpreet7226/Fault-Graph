@@ -1,21 +1,26 @@
 ---
 id: subsystems/condenser-assembly
 type: subsystem
-name: "Condenser Assembly"
+name: Condenser Assembly
 parent_assets:
-  - assets/chiller-carrier-30rap
-  - assets/chiller-york-yvaa
+- assets/chiller-carrier-30rap
+- assets/chiller-york-yvaa
 severity: high
 components:
-  - components/high-pressure-switch
-  - components/fan-motor
-tags: [condenser, heat-rejection, air-cooled, fan, coil]
+- components/high-pressure-switch
+- components/fan-motor
+tags:
+- condenser
+- heat-rejection
+- air-cooled
+- fan
+- coil
 connected_failures:
-  - failures/E3-high-pressure-trip
-  - failures/A6-fan-motor-fault
+- failures/E3-high-pressure-trip
+- failures/A6-fan-motor-fault
 connected_sops:
-  - sops/sop-high-pressure-lockout
-  - sops/sop-electrical-safety
+- sops/sop-high-pressure-lockout
+- sops/sop-electrical-safety
 ---
 
 # Condenser Assembly

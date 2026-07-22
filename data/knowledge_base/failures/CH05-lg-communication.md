@@ -1,13 +1,18 @@
 ---
-id: "FAIL-LG-CH05"
-type: "failure_mode"
-name: "CH05 Indoor/Outdoor Communication Error"
-severity: "critical"
-equipment_type: "VRF/Split"
-manufacturer: "LG"
-error_code: "CH05"
-subsystems: ["communication", "control_board"]
-components: ["comm_cable", "indoor_pcb", "outdoor_pcb"]
+id: FAIL-LG-CH05
+type: failure_mode
+name: CH05 Indoor/Outdoor Communication Error
+severity: critical
+equipment_type: VRF/Split
+manufacturer: LG
+error_code: CH05
+subsystems:
+- communication
+- control_board
+components:
+- comm_cable
+- indoor_pcb
+- outdoor_pcb
 ---
 
 # CH05 Indoor/Outdoor Communication Error

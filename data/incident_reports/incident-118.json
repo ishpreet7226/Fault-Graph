@@ -1,0 +1,20 @@
+{
+  "id": "INC-118",
+  "timeline": [
+    "118 hour review",
+    "121 hour escalation",
+    "123 hour recovery"
+  ],
+  "symptoms": [
+    "alarm burst",
+    "equipment slowdown",
+    "unexpected shutdown"
+  ],
+  "engineer_notes": "Site telemetry indicated drift in sensor readings and a secondary control fault near the asset controller.",
+  "actions": [
+    "isolated service panel",
+    "replaced suspect module",
+    "verified safe restart"
+  ],
+  "lessons_learned": "Early intervention and better preventive maintenance reduce repeat outages."
+}

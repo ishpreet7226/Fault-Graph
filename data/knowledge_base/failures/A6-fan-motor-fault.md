@@ -1,31 +1,40 @@
 ---
 id: failures/A6-fan-motor-fault
 type: failure
-name: "A6 — Fan Motor Fault"
-error_code: "A6"
+name: A6 — Fan Motor Fault
+error_code: A6
 severity: high
 affected_models:
-  - "Carrier 30RAP"
-  - "York YVAA"
+- Carrier 30RAP
+- York YVAA
 affected_subsystems:
-  - subsystems/condenser-assembly
-  - subsystems/electrical-control-panel
+- subsystems/condenser-assembly
+- subsystems/electrical-control-panel
 affected_components:
-  - components/fan-motor
+- components/fan-motor
 root_causes:
-  - "Motor winding failure (thermal overload)"
-  - "Bearing seizure"
-  - "Run/start capacitor failure (single-phase motors)"
-  - "Contactor failure or welded contacts"
-  - "Overload relay nuisance trip"
-  - "Phase imbalance or undervoltage"
-  - "EC motor drive communication fault (YVAA)"
-  - "Fan blade damage causing motor overload"
+- Motor winding failure (thermal overload)
+- Bearing seizure
+- Run/start capacitor failure (single-phase motors)
+- Contactor failure or welded contacts
+- Overload relay nuisance trip
+- Phase imbalance or undervoltage
+- EC motor drive communication fault (YVAA)
+- Fan blade damage causing motor overload
 connected_sops:
-  - sops/sop-electrical-safety
+- sops/sop-electrical-safety
 cascade_failures:
-  - failures/E3-high-pressure-trip
-tags: [A6, fan, motor, fault, contactor, overload, EC, capacitor, electrical]
+- failures/E3-high-pressure-trip
+tags:
+- a6
+- fan
+- motor
+- fault
+- contactor
+- overload
+- ec
+- capacitor
+- electrical
 ---
 
 # A6 — Fan Motor Fault

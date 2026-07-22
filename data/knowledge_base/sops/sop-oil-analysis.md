@@ -1,28 +1,39 @@
 ---
 id: sops/sop-oil-analysis
 type: sop
-name: "SOP — Compressor Oil Analysis & Contamination Response"
-sop_number: "SOP-OA-002"
-severity: high
-tags: [sop, oil-analysis, compressor]
+name: Oil Analysis
+sop_number: SOP-OIL-ANALYSIS
+severity: medium
+tags:
+- sop
+- safety
 ---
 
-# SOP: Compressor Oil Analysis & Contamination Response
+# Oil Analysis
 
-Purpose:
+## Purpose
+Sample compressor oil and verify contamination before service
 
-Provide instructions for collecting oil samples, interpreting acid number results, and actions when oil is contaminated by refrigerant or acids.
+## Safety
+- Use appropriate PPE
+- Follow site permit requirements
 
-Procedure:
+## Tools
+- Multimeter
+- Service manual
+- LOTO kit
 
-1. Follow [[sops/sop-electrical-safety]] for LOTO.
-2. Draw oil sample using approved sample port and store per lab instructions.
-3. Send to accredited lab for acid number (mg KOH/g) measurement.
-4. If acid number exceeds threshold (>0.05), initiate oil change, install acid filter, and consult manufacturer.
-5. If refrigerant dilution suspected (milky oil), perform oil change and extended pre-heat protocol before restart.
+## Inspection
+- Confirm conditions before starting work
 
-Related:
+## Repair
+- Execute controlled repair steps and document results
 
-- [[components/crankcase-heater]]
-- [[failures/E5-high-discharge-temp]]
-- [[incident_reports/story-3-crankcase-heater-failure]]
+## Verification
+- Re-test the system and confirm stable operation
+
+## Escalation
+- Escalate to engineering if the issue persists
+
+## Estimated Repair Time
+- 1-6 hours depending on asset complexity

@@ -1,27 +1,37 @@
 ---
 id: components/refrigerant-level-sensor
 type: component
-name: "Refrigerant Level / Suction Pressure Transducer"
+name: Refrigerant Level / Suction Pressure Transducer
 part_numbers:
-  - "RPT-0-500-4T"
-  - "RPT-0-300-4T"
+- RPT-0-500-4T
+- RPT-0-300-4T
 sensor_type: piezoelectric pressure transducer
-signal_type: "4-20mA"
+signal_type: 4-20mA
 range_psi:
-  R-410A: [0, 500]
-  R-134a: [0, 300]
+  R-410A:
+  - 0
+  - 500
+  R-134a:
+  - 0
+  - 300
 alarm_setpoint_psi:
   R-410A_low: 68
   R-134a_low: 25
 severity: high
-tags: [pressure, transducer, refrigerant, suction, level, sensor]
+tags:
+- pressure
+- transducer
+- refrigerant
+- suction
+- level
+- sensor
 parent_subsystems:
-  - subsystems/refrigerant-circuit
-  - subsystems/electrical-control-panel
+- subsystems/refrigerant-circuit
+- subsystems/electrical-control-panel
 connected_failures:
-  - failures/U0-refrigerant-loss
+- failures/U0-refrigerant-loss
 connected_sops:
-  - sops/sop-refrigerant-leak-check
+- sops/sop-refrigerant-leak-check
 ---
 
 # Refrigerant Level / Suction Pressure Transducer

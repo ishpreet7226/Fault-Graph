@@ -1,13 +1,17 @@
 ---
-id: "FAIL-SAM-E5"
-type: "failure_mode"
-name: "E5 Heat Exchanger Sensor Error"
-severity: "high"
-equipment_type: "Split AC"
-manufacturer: "Samsung"
-error_code: "E5"
-subsystems: ["sensors", "refrigeration_circuit"]
-components: ["pipe_thermistor", "heat_exchanger"]
+id: FAIL-SAM-E5
+type: failure_mode
+name: E5 Heat Exchanger Sensor Error
+severity: high
+equipment_type: Split AC
+manufacturer: Samsung
+error_code: E5
+subsystems:
+- sensors
+- refrigeration_circuit
+components:
+- pipe_thermistor
+- heat_exchanger
 ---
 
 # E5 Heat Exchanger Sensor Error

@@ -1,13 +1,17 @@
 ---
-id: "FAIL-SAMSUNG-E3"
-type: "failure_mode"
-name: "E3 Indoor Fan Motor Error"
-severity: "high"
-equipment_type: "Split AC"
-manufacturer: "Samsung"
-error_code: "E3"
-subsystems: ["fan", "control_board"]
-components: ["indoor_fan_motor", "indoor_pcb"]
+id: FAIL-SAMSUNG-E3
+type: failure_mode
+name: E3 Indoor Fan Motor Error
+severity: high
+equipment_type: Split AC
+manufacturer: Samsung
+error_code: E3
+subsystems:
+- fan
+- control_board
+components:
+- indoor_fan_motor
+- indoor_pcb
 ---
 
 # E3 Indoor Fan Motor Error

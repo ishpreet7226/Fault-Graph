@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='480'>
+  <rect width='800' height='480' fill='#0f172a'/>
+  <rect x='40' y='40' width='720' height='400' rx='24' fill='#111827' stroke='#38bdf8' stroke-width='4'/>
+  <text x='80' y='140' fill='#f8fafc' font-size='32' font-family='Arial'>Fault-Graph OCR Sample</text>
+  <text x='80' y='220' fill='#7dd3fc' font-size='28' font-family='Arial'>nameplates</text>
+  <text x='80' y='300' fill='#fbbf24' font-size='24' font-family='Arial'>Asset Asset-7 · Code E032</text>
+</svg>

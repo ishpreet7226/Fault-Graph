@@ -8,10 +8,89 @@ import re
 import yaml
 import networkx as nx
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
+
+
+def _normalise_link_target(target: str) -> str:
+    target = target.strip()
+    if not target:
+        return target
+    target = target.replace(".md", "")
+    if target.startswith("[[") and target.endswith("]]"):
+        target = target[2:-2]
+    if target.startswith("manuals/") or target.startswith("sops/") or target.startswith("assets/") or target.startswith("components/") or target.startswith("subsystems/") or target.startswith("failures/"):
+        return target
+    if "/" in target:
+        return target
+    return target
 
 
 KB_DIR = Path(__file__).parent.parent / "data" / "knowledge_base"
+
+
+def _looks_like_link_target(value: str) -> bool:
+    value = value.strip()
+    if not value or value.startswith(("http://", "https://", "#")):
+        return False
+    if value.startswith("[[") and value.endswith("]]"):
+        return True
+    if value.startswith(("manuals/", "sops/", "assets/", "asset/", "components/", "subsystems/", "failures/")):
+        return True
+    if "/" in value and not any(ch.isspace() for ch in value):
+        return True
+    return False
+
+
+def _slugify(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", str(value).lower())
+
+
+def _resolve_target_node(target: str, graph: nx.DiGraph) -> Optional[str]:
+    if not target:
+        return None
+    if target in graph:
+        return target
+
+    target_slug = _slugify(target)
+    for node in graph.nodes():
+        if node == target:
+            return node
+
+        node_slug = _slugify(node)
+        if target_slug == node_slug:
+            return node
+
+        if target_slug and target_slug in node_slug:
+            return node
+        if node_slug and node_slug in target_slug:
+            return node
+
+    return None
+
+
+def _extract_frontmatter_targets(frontmatter: dict[str, Any]) -> list[str]:
+    targets: list[str] = []
+    if not isinstance(frontmatter, dict):
+        return targets
+
+    for key, value in frontmatter.items():
+        if key in {"id", "name", "type", "severity", "error_code", "tags"}:
+            continue
+
+        if isinstance(value, str):
+            for match in re.findall(r"\[\[(.*?)\]\]", value):
+                targets.append(_normalise_link_target(match))
+            if _looks_like_link_target(value):
+                targets.append(_normalise_link_target(value))
+        elif isinstance(value, list):
+            for item in value:
+                if isinstance(item, str):
+                    for match in re.findall(r"\[\[(.*?)\]\]", item):
+                        targets.append(_normalise_link_target(match))
+                    if _looks_like_link_target(item):
+                        targets.append(_normalise_link_target(item))
+
+    return list(dict.fromkeys([target for target in targets if target]))
 
 
 def parse_markdown_file(filepath: Path) -> dict:
@@ -36,13 +115,10 @@ def parse_markdown_file(filepath: Path) -> dict:
     # Body content (after frontmatter)
     content = text[fm_match.end():] if fm_match else text
 
-    # Extract all [[wikilinks]]
+    # Extract all [[wikilinks]] from the content and frontmatter.
     wikilinks = re.findall(r"\[\[(.*?)\]\]", content + str(frontmatter))
-
-    # Also extract from YAML string values that contain [[...]]
-    fm_str = fm_match.group(1) if fm_match else ""
-    fm_wikilinks = re.findall(r"\[\[(.*?)\]\]", fm_str)
-    wikilinks = list(set(wikilinks + fm_wikilinks))
+    wikilinks.extend(_extract_frontmatter_targets(frontmatter))
+    wikilinks = list(dict.fromkeys([_normalise_link_target(target) for target in wikilinks if target]))
 
     node_id = frontmatter.get("id", str(filepath.relative_to(KB_DIR).with_suffix("")))
 
@@ -93,13 +169,14 @@ def build_graph(kb_dir: Path = KB_DIR) -> nx.DiGraph:
     for doc in parsed_docs:
         source = doc["node_id"]
         for target in doc["wikilinks"]:
-            target = target.strip()
+            target = _normalise_link_target(target)
             if target and target != source:
-                # Add target node as placeholder if it doesn't exist
-                if not G.has_node(target):
+                resolved_target = _resolve_target_node(target, G)
+                if resolved_target is None:
                     G.add_node(target, name=target, node_type="reference",
                                severity="unknown")
-                G.add_edge(source, target, link_type="wikilink")
+                    resolved_target = target
+                G.add_edge(source, resolved_target, link_type="wikilink")
 
     print(f"[graph_builder] Built graph: {G.number_of_nodes()} nodes, "
           f"{G.number_of_edges()} edges from {len(parsed_docs)} documents")

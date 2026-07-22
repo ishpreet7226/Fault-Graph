@@ -1,21 +1,27 @@
 ---
 id: subsystems/electrical-control-panel
 type: subsystem
-name: "Electrical Control Panel"
+name: Electrical Control Panel
 parent_assets:
-  - assets/chiller-carrier-30rap
-  - assets/chiller-york-yvaa
+- assets/chiller-carrier-30rap
+- assets/chiller-york-yvaa
 severity: high
 components:
-  - components/fan-motor
-  - components/discharge-temperature-sensor
-  - components/refrigerant-level-sensor
-tags: [control-panel, microprocessor, Pro-Dialog, Microgateway, electrical, BMS]
+- components/fan-motor
+- components/discharge-temperature-sensor
+- components/refrigerant-level-sensor
+tags:
+- control-panel
+- microprocessor
+- pro-dialog
+- microgateway
+- electrical
+- bms
 connected_failures:
-  - failures/A6-fan-motor-fault
-  - failures/103-prestart-temp-alert
+- failures/A6-fan-motor-fault
+- failures/103-prestart-temp-alert
 connected_sops:
-  - sops/sop-electrical-safety
+- sops/sop-electrical-safety
 ---
 
 # Electrical Control Panel

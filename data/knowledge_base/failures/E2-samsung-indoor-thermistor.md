@@ -1,13 +1,17 @@
 ---
-id: "FAIL-SAMSUNG-E2"
-type: "failure_mode"
-name: "E2 Indoor Coil Thermistor Error"
-severity: "medium"
-equipment_type: "Split AC"
-manufacturer: "Samsung"
-error_code: "E2"
-subsystems: ["sensors", "control_board"]
-components: ["indoor_coil_thermistor", "indoor_pcb"]
+id: FAIL-SAMSUNG-E2
+type: failure_mode
+name: E2 Indoor Coil Thermistor Error
+severity: medium
+equipment_type: Split AC
+manufacturer: Samsung
+error_code: E2
+subsystems:
+- sensors
+- control_board
+components:
+- indoor_coil_thermistor
+- indoor_pcb
 ---
 
 # E2 Indoor Coil Thermistor Error

@@ -1,0 +1,16 @@
+{
+  "id": "CHAIN-264",
+  "timeline": [
+    "264h - initial alarm",
+    "265h - secondary warning",
+    "266h - shutdown"
+  ],
+  "sensor_readings": [
+    "pressure rising",
+    "temperature high",
+    "current imbalance"
+  ],
+  "configuration": "mode=auto; fan=80%; threshold=high",
+  "repair": "Replaced sensor and cleaned affected coil",
+  "outcome": "resolved"
+}

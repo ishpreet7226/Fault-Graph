@@ -1,0 +1,16 @@
+{
+  "id": "CHAIN-275",
+  "timeline": [
+    "275h - initial alarm",
+    "276h - secondary warning",
+    "277h - shutdown"
+  ],
+  "sensor_readings": [
+    "pressure rising",
+    "temperature high",
+    "current imbalance"
+  ],
+  "configuration": "mode=auto; fan=80%; threshold=high",
+  "repair": "Replaced sensor and cleaned affected coil",
+  "outcome": "resolved"
+}

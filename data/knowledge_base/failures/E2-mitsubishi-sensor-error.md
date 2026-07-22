@@ -1,13 +1,17 @@
 ---
-id: "FAIL-MIT-E2"
-type: "failure_mode"
-name: "E2 Sensor Error"
-severity: "medium"
-equipment_type: "Split AC"
-manufacturer: "Mitsubishi"
-error_code: "E2"
-subsystems: ["sensors", "control_board"]
-components: ["temperature_sensor", "indoor_pcb"]
+id: FAIL-MIT-E2
+type: failure_mode
+name: E2 Sensor Error
+severity: medium
+equipment_type: Split AC
+manufacturer: Mitsubishi
+error_code: E2
+subsystems:
+- sensors
+- control_board
+components:
+- temperature_sensor
+- indoor_pcb
 ---
 
 # E2 Sensor Error

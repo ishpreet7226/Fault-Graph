@@ -1,52 +1,66 @@
 ---
 id: asset/chiller-york-yvaa
 type: asset
-name: "York YVAA Variable-Speed Air-Cooled Screw Chiller"
-model: "York YVAA"
-manufacturer: "Johnson Controls / York"
-capacity_tons: [120, 150, 180, 200, 250]
+name: York YVAA Air-Cooled Chiller
+model: York YVAA
+manufacturer: York International
+capacity: 150-350 tons
 refrigerant: R-134a
-voltage: "480V/3Ph/60Hz"
 severity: critical
-tags: [chiller, air-cooled, variable-speed, screw-compressor, industrial]
+installed_date: '2020-01-15'
+health_score: 66
+tags:
+- asset
+- hvac
+- industrial
 connected_subsystems:
-  - subsystems/condenser-assembly
-  - subsystems/compressor-unit
-  - subsystems/refrigerant-circuit
-  - subsystems/electrical-control-panel
+- subsystems/condenser-assembly
+- subsystems/compressor-unit
+- subsystems/refrigerant-circuit
+- subsystems/electrical-control-panel
+- subsystems/evaporator-coil
+- subsystems/expansion-valve
 known_error_codes:
-  - failures/E3-high-pressure-trip
-  - failures/E5-high-discharge-temp
-  - failures/U0-refrigerant-loss
-  - failures/A6-fan-motor-fault
+- failures/E3-high-pressure-trip
+- failures/E5-high-discharge-temperatur
+- failures/U0-refrigerant-loss---low-ch
+- failures/103-prestart-temperature-aler
+- failures/A6-fan-motor-fault
+- failures/L1-low-refrigerant-pressure
+- failures/L2-low-oil-level
+- failures/P1-power-supply-fault
 ---
 
-# York YVAA Variable-Speed Air-Cooled Screw Chiller
+# York YVAA Air-Cooled Chiller
 
 ## Overview
-The **York YVAA** series represents York's flagship variable-speed air-cooled screw chiller platform. It uses a single-screw compressor with an integrated variable-frequency drive (VFD) on both the compressor and condenser fans, achieving industry-leading part-load efficiencies (IPLV).
+The **York YVAA** manufactured by **York International** is a production HVAC asset
+with capacity **150-350 tons** using **R-134a** refrigerant.
 
 ## Major Subsystems
-
-- [[subsystems/condenser-assembly]] — Variable-speed EC fan array with aluminum micro-channel coils
-- [[subsystems/compressor-unit]] — Single-screw compressor with integrated VFD and oil management
-- [[subsystems/refrigerant-circuit]] — R-134a refrigerant circuit with electronic expansion valve (EEV)
-- [[subsystems/electrical-control-panel]] — York Microgateway+ controller with BACnet/Modbus integration
+- [[subsystems/condenser-assembly]]
+- [[subsystems/compressor-unit]]
+- [[subsystems/refrigerant-circuit]]
+- [[subsystems/electrical-control-panel]]
+- [[subsystems/evaporator-coil]]
+- [[subsystems/expansion-valve]]
 
 ## Known Failure Modes
-
-- [[failures/E3-high-pressure-trip]] — High side pressure lockout during peak ambient conditions
-- [[failures/E5-high-discharge-temp]] — VFD-compressor thermal protection activation
-- [[failures/U0-refrigerant-loss]] — Refrigerant undercharge detected via suction pressure monitoring
-- [[failures/A6-fan-motor-fault]] — EC fan motor drive fault or communication loss
+- [[failures/e3-high-pressure-trip]]
+- [[failures/e5-high-discharge-temperature]]
+- [[failures/u0-refrigerant-loss---low-charge]]
+- [[failures/103-prestart-temperature-alert]]
+- [[failures/a6-fan-motor-fault]]
+- [[failures/l1-low-refrigerant-pressure]]
+- [[failures/l2-low-oil-level]]
+- [[failures/p1-power-supply-fault]]
 
 ## Maintenance Schedule
 | Interval | Task |
 |----------|------|
-| Monthly  | Check VFD cooling fan operation, inspect micro-channel coil fouling |
-| Quarterly| Verify EEV superheat control, inspect oil level/quality |
-| Semi-annually | VFD firmware update, compressor vibration analysis |
-| Annually | Full leak check, motor insulation resistance test |
+| Monthly  | Visual inspection, filter check, alarm log review |
+| Quarterly| Refrigerant check, electrical connections, fan amperage |
+| Annually | Full system audit, oil analysis, coil cleaning |
 
 ## Safety Requirements
 - [[sops/sop-high-pressure-lockout]]

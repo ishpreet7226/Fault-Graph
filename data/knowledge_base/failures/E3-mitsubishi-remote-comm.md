@@ -1,13 +1,18 @@
 ---
-id: "FAIL-MIT-E3"
-type: "failure_mode"
-name: "E3 Remote Controller Communication Error"
-severity: "medium"
-equipment_type: "Split AC"
-manufacturer: "Mitsubishi"
-error_code: "E3"
-subsystems: ["communication", "control_board"]
-components: ["remote_controller", "comm_cable", "indoor_pcb"]
+id: FAIL-MIT-E3
+type: failure_mode
+name: E3 Remote Controller Communication Error
+severity: medium
+equipment_type: Split AC
+manufacturer: Mitsubishi
+error_code: E3
+subsystems:
+- communication
+- control_board
+components:
+- remote_controller
+- comm_cable
+- indoor_pcb
 ---
 
 # E3 Remote Controller Communication Error

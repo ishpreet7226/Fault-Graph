@@ -1,13 +1,18 @@
 ---
-id: "FAIL-LG-CH04"
-type: "failure_mode"
-name: "CH04 Drain Pump Error"
-severity: "high"
-equipment_type: "VRF/Split"
-manufacturer: "LG"
-error_code: "CH04"
-subsystems: ["drainage", "control_board"]
-components: ["drain_pump", "float_switch", "indoor_pcb"]
+id: FAIL-LG-CH04
+type: failure_mode
+name: CH04 Drain Pump Error
+severity: high
+equipment_type: VRF/Split
+manufacturer: LG
+error_code: CH04
+subsystems:
+- drainage
+- control_board
+components:
+- drain_pump
+- float_switch
+- indoor_pcb
 ---
 
 # CH04 Drain Pump Error

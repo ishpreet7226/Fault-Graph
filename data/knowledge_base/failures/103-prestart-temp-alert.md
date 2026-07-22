@@ -1,26 +1,33 @@
 ---
 id: failures/103-prestart-temp-alert
 type: failure
-name: "103 — Prestart Temperature Alert"
-error_code: "103"
+name: 103 — Prestart Temperature Alert
+error_code: '103'
 severity: medium
 affected_models:
-  - "Carrier 30RAP"
+- Carrier 30RAP
 affected_subsystems:
-  - subsystems/electrical-control-panel
-  - subsystems/refrigerant-circuit
+- subsystems/electrical-control-panel
+- subsystems/refrigerant-circuit
 affected_components:
-  - components/discharge-temperature-sensor
-  - components/refrigerant-level-sensor
+- components/discharge-temperature-sensor
+- components/refrigerant-level-sensor
 root_causes:
-  - "Low ambient temperature startup (<40°F)"
-  - "Leaving water temperature outside startup window"
-  - "Crankcase heater failure (oil migration)"
-  - "Sensor calibration drift"
-  - "Extended shutdown period (compressor oil cooled)"
+- Low ambient temperature startup (<40°F)
+- Leaving water temperature outside startup window
+- Crankcase heater failure (oil migration)
+- Sensor calibration drift
+- Extended shutdown period (compressor oil cooled)
 connected_sops:
-  - sops/sop-electrical-safety
-tags: [103, prestart, temperature, alert, startup, low-ambient, carrier]
+- sops/sop-electrical-safety
+tags:
+- '103'
+- prestart
+- temperature
+- alert
+- startup
+- low-ambient
+- carrier
 ---
 
 # 103 — Prestart Temperature Alert

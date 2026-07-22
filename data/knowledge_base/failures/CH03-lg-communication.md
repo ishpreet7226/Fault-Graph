@@ -1,13 +1,18 @@
 ---
-id: "FAIL-LG-CH03"
-type: "failure_mode"
-name: "CH03 Remote Control Communication Error"
-severity: "medium"
-equipment_type: "Split AC/VRF"
-manufacturer: "LG"
-error_code: "CH03"
-subsystems: ["communication", "control_board"]
-components: ["remote_controller", "comm_cable", "indoor_pcb"]
+id: FAIL-LG-CH03
+type: failure_mode
+name: CH03 Remote Control Communication Error
+severity: medium
+equipment_type: Split AC/VRF
+manufacturer: LG
+error_code: CH03
+subsystems:
+- communication
+- control_board
+components:
+- remote_controller
+- comm_cable
+- indoor_pcb
 ---
 
 # CH03 Remote Control Communication Error

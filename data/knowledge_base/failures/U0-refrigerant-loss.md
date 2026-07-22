@@ -1,32 +1,40 @@
 ---
 id: failures/U0-refrigerant-loss
 type: failure
-name: "U0 — Refrigerant Loss / Low Charge"
-error_code: "U0"
+name: U0 — Refrigerant Loss / Low Charge
+error_code: U0
 severity: critical
 affected_models:
-  - "Carrier 30RAP"
-  - "York YVAA"
+- Carrier 30RAP
+- York YVAA
 affected_subsystems:
-  - subsystems/refrigerant-circuit
-  - subsystems/compressor-unit
+- subsystems/refrigerant-circuit
+- subsystems/compressor-unit
 affected_components:
-  - components/refrigerant-level-sensor
-  - components/high-pressure-switch
+- components/refrigerant-level-sensor
+- components/high-pressure-switch
 root_causes:
-  - "Refrigerant leak at brazed joint or flare fitting"
-  - "Schrader valve core leak"
-  - "Service valve packing leak"
-  - "Evaporator or condenser coil micro-leak"
-  - "Improper refrigerant recovery/recharge procedure"
+- Refrigerant leak at brazed joint or flare fitting
+- Schrader valve core leak
+- Service valve packing leak
+- Evaporator or condenser coil micro-leak
+- Improper refrigerant recovery/recharge procedure
 connected_sops:
-  - sops/sop-refrigerant-leak-check
-  - sops/sop-high-pressure-lockout
-tags: [U0, refrigerant, loss, leak, undercharge, low-pressure, R-410A, R-134a]
+- sops/sop-refrigerant-leak-check
+- sops/sop-high-pressure-lockout
+tags:
+- u0
+- refrigerant
+- loss
+- leak
+- undercharge
+- low-pressure
+- r-410a
+- r-134a
 regulatory_requirements:
-  - "EPA Section 608 - Refrigerant Recovery Required"
-  - "ASHRAE 15 - Safety Standard"
-  - "Local refrigerant handling regulations"
+- EPA Section 608 - Refrigerant Recovery Required
+- ASHRAE 15 - Safety Standard
+- Local refrigerant handling regulations
 ---
 
 # U0 — Refrigerant Loss / Low Charge
